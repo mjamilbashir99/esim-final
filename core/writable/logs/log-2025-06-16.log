@@ -1,0 +1,57 @@
+ERROR - 2025-06-16 06:19:30 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\Tmg_projects\esim\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Tmg_projects\esim\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'esim', 3306, '', 0)
+#1 D:\Tmg_projects\esim\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Tmg_projects\esim\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Tmg_projects\esim\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Tmg_projects\esim\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Tmg_projects\esim\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 D:\Tmg_projects\esim\app\Controllers\Api\EsimController.php(368): CodeIgniter\BaseModel->first()
+#7 D:\Tmg_projects\esim\app\Controllers\Api\EsimController.php(359): App\Controllers\Api\EsimController->getB2CMarkup()
+#8 D:\Tmg_projects\esim\app\Controllers\Api\EsimController.php(178): App\Controllers\Api\EsimController->calculateSellingPrice(6.9)
+#9 D:\Tmg_projects\esim\system\CodeIgniter.php(933): App\Controllers\Api\EsimController->showBundles()
+#10 D:\Tmg_projects\esim\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\EsimController))
+#11 D:\Tmg_projects\esim\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Tmg_projects\esim\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 D:\Tmg_projects\esim\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 D:\Tmg_projects\esim\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 D:\Tmg_projects\esim\system\rewrite.php(44): require_once('D:\\Tmg_projects...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\Tmg_projects\esim\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\Tmg_projects\esim\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Tmg_projects\esim\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Tmg_projects\esim\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Tmg_projects\esim\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Tmg_projects\esim\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 D:\Tmg_projects\esim\app\Controllers\Api\EsimController.php(368): CodeIgniter\BaseModel->first()
+#6 D:\Tmg_projects\esim\app\Controllers\Api\EsimController.php(359): App\Controllers\Api\EsimController->getB2CMarkup()
+#7 D:\Tmg_projects\esim\app\Controllers\Api\EsimController.php(178): App\Controllers\Api\EsimController->calculateSellingPrice(6.9)
+#8 D:\Tmg_projects\esim\system\CodeIgniter.php(933): App\Controllers\Api\EsimController->showBundles()
+#9 D:\Tmg_projects\esim\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\EsimController))
+#10 D:\Tmg_projects\esim\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Tmg_projects\esim\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\Tmg_projects\esim\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Tmg_projects\esim\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Tmg_projects\esim\system\rewrite.php(44): require_once('D:\\Tmg_projects...')
+#15 {main}
+DEBUG - 2025-06-16 06:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-16 06:19:31 --> ErrorException: Undefined variable $totalPages
+[Method: GET, Route: /]
+in APPPATH\Views\bundles_list.php on line 150.
+ 1 APPPATH\Views\bundles_list.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalPages', 'D:\\Tmg_projects\\esim\\app\\Views\\bundles_list.php', 150)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Tmg_projects\\esim\\app\\Views\\bundles_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('bundles_list', [], true)
+ 5 APPPATH\Libraries\EsimTemplate.php(11): view('bundles_list', [...])
+ 6 APPPATH\Controllers\Api\EsimController.php(192): App\Libraries\EsimTemplate->render('bundles_list', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api\EsimController->showBundles()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\EsimController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Tmg_projects\\esim\\public\\index.php')
+DEBUG - 2025-06-16 06:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-16 06:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

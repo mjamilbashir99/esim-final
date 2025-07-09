@@ -1,0 +1,57 @@
+DEBUG - 2025-05-08 11:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-08 11:41:04 --> ErrorException: Undefined variable $apiKey
+[Method: GET, Route: api/esims]
+in APPPATH\Controllers\Api\EsimController.php on line 44.
+ 1 APPPATH\Controllers\Api\EsimController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $apiKey', 'C:\\xampp\\htdocs\\esim\\app\\Controllers\\Api\\EsimController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api\EsimController->getEsims()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\EsimController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\esim\\public\\index.php')
+CRITICAL - 2025-05-08 11:42:02 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 403
+[Method: GET, Route: api/esims]
+in SYSTEMPATH\HTTP\CURLRequest.php on line 709.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(709): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 403')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(383): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(152): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://api.esim-go.com/v2.4/esims')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(187): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://api.esim-go.com/v2.4/esims', [...])
+ 5 APPPATH\Controllers\Api\EsimController.php(42): CodeIgniter\HTTP\CURLRequest->get('https://api.esim-go.com/v2.4/esims', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api\EsimController->getEsims()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\EsimController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\esim\\public\\index.php')
+CRITICAL - 2025-05-08 12:01:53 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 403
+[Method: GET, Route: api/info]
+in SYSTEMPATH\HTTP\CURLRequest.php on line 709.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(709): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 403')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(383): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(152): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://api.esim-go.com/v2.3/')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(187): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://api.esim-go.com/v2.3/', [...])
+ 5 APPPATH\Controllers\Api\EsimController.php(71): CodeIgniter\HTTP\CURLRequest->get('https://api.esim-go.com/v2.3/', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api\EsimController->getApiInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\EsimController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\esim\\public\\index.php')
+CRITICAL - 2025-05-08 12:02:22 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 403
+[Method: GET, Route: api/info]
+in SYSTEMPATH\HTTP\CURLRequest.php on line 709.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(709): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 403')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(383): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(152): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://api.esim-go.com/v2.3/')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(187): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://api.esim-go.com/v2.3/', [...])
+ 5 APPPATH\Controllers\Api\EsimController.php(71): CodeIgniter\HTTP\CURLRequest->get('https://api.esim-go.com/v2.3/', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api\EsimController->getApiInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\EsimController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\esim\\public\\index.php')

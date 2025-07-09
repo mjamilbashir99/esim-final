@@ -1,0 +1,12 @@
+{
+    "type": "transaction",
+    "assign": true,
+    "order": [
+        {
+            "type": "bundle",
+            "quantity": 1,
+            "item": "esim_1GB_7D_AD_V2",
+            "allowReassign": true
+        }
+    ]
+}
