@@ -1,0 +1,231 @@
+DEBUG - 2025-07-14 09:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 09:50:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Blog/Views/index.php"
+[Method: GET, Route: blog]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Blog/Views/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Modules/Blog/Views/index', [], true)
+ 3 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('Modules/Blog/Views/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 09:55:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "C:\xampp\htdocs\esim\core\app\Modules/Blog/Views/index.php"
+[Method: GET, Route: blog]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('C:\\xampp\\htdocs\\esim\\core\\app\\Modules/Blog/Views/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('C:\\xampp\\htdocs\\esim\\core\\app\\Modules/Blog/Views/index.php', [], true)
+ 3 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('C:\\xampp\\htdocs\\esim\\core\\app\\Modules/Blog/Views/index.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 09:55:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "C:\xampp\htdocs\esim\core\app\Modules\Blog\Views\index.php"
+[Method: GET, Route: blog]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('C:\\xampp\\htdocs\\esim\\core\\app\\Modules\\Blog\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('C:\\xampp\\htdocs\\esim\\core\\app\\Modules\\Blog\\Views\\index.php', [], true)
+ 3 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('C:\\xampp\\htdocs\\esim\\core\\app\\Modules\\Blog\\Views\\index.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 09:57:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "index.php"
+[Method: GET, Route: blog]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 10:02:30 --> TypeError: rtrim(): Argument #1 ($string) must be of type string, null given
+[Method: GET, Route: blog]
+in SYSTEMPATH\View\View.php on line 143.
+ 1 SYSTEMPATH\View\View.php(143): rtrim(null, '\\/ ')
+ 2 APPPATH\Config\Services.php(32): CodeIgniter\View\View->__construct(Object(Config\View), null)
+ 3 SYSTEMPATH\Config\BaseService.php(251): Config\Services::renderer(false)
+ 4 APPPATH\Config\Services.php(26): CodeIgniter\Config\BaseService::getSharedInstance('renderer')
+ 5 SYSTEMPATH\Config\BaseService.php(321): Config\Services::renderer()
+ 6 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('renderer', [])
+ 7 SYSTEMPATH\Common.php(1000): CodeIgniter\Config\BaseService::get('renderer')
+ 8 SYSTEMPATH\Common.php(1163): service('renderer')
+ 9 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('index', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 10:02:57 --> TypeError: rtrim(): Argument #1 ($string) must be of type string, null given
+[Method: GET, Route: blog]
+in SYSTEMPATH\View\View.php on line 143.
+ 1 SYSTEMPATH\View\View.php(143): rtrim(null, '\\/ ')
+ 2 APPPATH\Config\Services.php(32): CodeIgniter\View\View->__construct(Object(Config\View), null)
+ 3 SYSTEMPATH\Config\BaseService.php(251): Config\Services::renderer(false)
+ 4 APPPATH\Config\Services.php(26): CodeIgniter\Config\BaseService::getSharedInstance('renderer')
+ 5 SYSTEMPATH\Config\BaseService.php(321): Config\Services::renderer()
+ 6 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('renderer', [])
+ 7 SYSTEMPATH\Common.php(1000): CodeIgniter\Config\BaseService::get('renderer')
+ 8 SYSTEMPATH\Common.php(1163): service('renderer')
+ 9 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('index')
+10 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 10:04:13 --> TypeError: rtrim(): Argument #1 ($string) must be of type string, null given
+[Method: GET, Route: blog]
+in SYSTEMPATH\View\View.php on line 143.
+ 1 SYSTEMPATH\View\View.php(143): rtrim(null, '\\/ ')
+ 2 APPPATH\Config\Services.php(32): CodeIgniter\View\View->__construct(Object(Config\View), null, Object(CodeIgniter\Autoloader\FileLocator), null, Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\Config\BaseService.php(251): Config\Services::renderer(false)
+ 4 APPPATH\Config\Services.php(26): CodeIgniter\Config\BaseService::getSharedInstance('renderer')
+ 5 SYSTEMPATH\Config\BaseService.php(321): Config\Services::renderer()
+ 6 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('renderer', [])
+ 7 SYSTEMPATH\Common.php(1000): CodeIgniter\Config\BaseService::get('renderer')
+ 8 SYSTEMPATH\Common.php(1163): service('renderer')
+ 9 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('index')
+10 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 10:04:45 --> TypeError: rtrim(): Argument #1 ($string) must be of type string, null given
+[Method: GET, Route: blog]
+in SYSTEMPATH\View\View.php on line 143.
+ 1 SYSTEMPATH\View\View.php(143): rtrim(null, '\\/ ')
+ 2 APPPATH\Config\Services.php(32): CodeIgniter\View\View->__construct(Object(Config\View), null, Object(CodeIgniter\Autoloader\FileLocator), null, Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\Config\BaseService.php(251): Config\Services::renderer(false)
+ 4 APPPATH\Config\Services.php(26): CodeIgniter\Config\BaseService::getSharedInstance('renderer')
+ 5 SYSTEMPATH\Config\BaseService.php(321): Config\Services::renderer()
+ 6 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('renderer', [])
+ 7 SYSTEMPATH\Common.php(1000): CodeIgniter\Config\BaseService::get('renderer')
+ 8 SYSTEMPATH\Common.php(1163): service('renderer')
+ 9 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('index')
+10 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 10:07:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Blog/Views/index.php"
+[Method: GET, Route: blog]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Blog/Views/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Modules/Blog/Views/index', [], true)
+ 3 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('Modules/Blog/Views/index')
+ 4 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 10:07:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Blog/Views/index.php"
+[Method: GET, Route: blog]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Blog/Views/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Modules/Blog/Views/index', [], true)
+ 3 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('Modules/Blog/Views/index')
+ 4 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 10:07:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Blog/Views/index.php"
+[Method: GET, Route: blog]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Blog/Views/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Modules/Blog/Views/index', [], true)
+ 3 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('Modules/Blog/Views/index')
+ 4 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 10:08:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Blog/Views/index.php"
+[Method: GET, Route: blog]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Blog/Views/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Modules/Blog/Views/index', [], true)
+ 3 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('Modules/Blog/Views/index')
+ 4 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 10:08:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Blog/Views/index.php"
+[Method: GET, Route: blog]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Blog/Views/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Modules/Blog/Views/index', [], true)
+ 3 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('Modules/Blog/Views/index')
+ 4 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 10:08:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Blog/Views/index.php"
+[Method: GET, Route: blog]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Blog/Views/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Modules/Blog/Views/index', [], true)
+ 3 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('Modules/Blog/Views/index')
+ 4 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 10:08:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Blog/Views/index.php"
+[Method: GET, Route: blog]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Blog/Views/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Modules/Blog/Views/index', [], true)
+ 3 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('Modules/Blog/Views/index')
+ 4 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 10:08:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Blog/Views/index.php"
+[Method: GET, Route: blog]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Blog/Views/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Modules/Blog/Views/index', [], true)
+ 3 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('Modules/Blog/Views/index')
+ 4 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 10:08:15 --> ErrorException: Undefined variable $blogs
+[Method: GET, Route: blog]
+in APPPATH\Modules\Blog\Views\index.php on line 3.
+ 1 APPPATH\Modules\Blog\Views\index.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $blogs', 'C:\\xampp\\htdocs\\esim\\core\\app\\Modules\\Blog\\Views\\index.php', 3)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\esim\\core\\app\\Modules\\Blog\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Modules\Blog\Controllers\BlogController.php(15): view('index')
+ 6 SYSTEMPATH\CodeIgniter.php(933): Modules\Blog\Controllers\BlogController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Blog\Controllers\BlogController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

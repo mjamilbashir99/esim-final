@@ -5,6 +5,10 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+$routes->group('blog', ['namespace' => 'Modules\Blog\Controllers'], function($routes) {
+   $routes->get('/', 'BlogController::index');
+});
+
 //Compatibility articles 
 $routes->get('compatibility/index', 'EsimCompatibility\CompatibilityController::index');
 $routes->get('compatibility/apple', 'EsimCompatibility\CompatibilityController::apple');
@@ -164,3 +168,9 @@ $routes->group('admin', ['namespace' => 'App\Controllers\Admin'], function ($rou
       $routes->get('email-templates/delete/(:num)', 'EmailTemplates::delete/$1');
    });
 });
+
+
+
+
+
+
