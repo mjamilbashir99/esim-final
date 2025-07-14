@@ -50,43 +50,43 @@ class CompatibilityController extends Controller
     public function apple()
     {
         $this->trackView('apple');
-        return $this->template->render('compatibility/apple');
+        return $this->template->render('Esim/Views/compatibility/apple');
     }
 
     public function google()
     {
         $this->trackView('google');
-        return $this->template->render('compatibility/google');
+        return $this->template->render('Esim/Views/compatibility/google');
     }
 
     public function samsung()
     {
         $this->trackView('samsung');
-        return $this->template->render('compatibility/samsung');
+        return $this->template->render('Esim/Views/compatibility/samsung');
     }
 
     public function huawei()
     {
         $this->trackView('huawei');
-        return $this->template->render('compatibility/huawei');
+        return $this->template->render('Esim/Views/compatibility/huawei');
     }
 
     public function laptop()
     {
         $this->trackView('laptop');
 
-        return $this->template->render('compatibility/laptop');
+        return $this->template->render('Esim/Views/compatibility/laptop');
     }
 
     public function oppo()
     {
         $this->trackView('oppo');
-        return $this->template->render('compatibility/oppo');
+        return $this->template->render('Esim/Views/compatibility/oppo');
     }
 
     public function other()
     {
         $this->trackView('other');
-        return $this->template->render('compatibility/other');
+        return $this->template->render('Esim/Views/compatibility/other');
     }
 }

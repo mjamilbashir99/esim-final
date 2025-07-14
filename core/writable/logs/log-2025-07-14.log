@@ -1471,3 +1471,19 @@ DEBUG - 2025-07-14 13:01:21 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-07-14 13:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-07-14 13:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-07-14 13:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 13:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 13:04:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "compatibility/samsung.php"
+[Method: GET, Route: compatibility/samsung]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('compatibility/samsung.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('compatibility/samsung', [], true)
+ 3 APPPATH\Libraries\EsimTemplate.php(11): view('compatibility/samsung', [...])
+ 4 APPPATH\Modules\Esim\Controllers\CompatibilityController.php(65): App\Libraries\EsimTemplate->render('compatibility/samsung')
+ 5 SYSTEMPATH\CodeIgniter.php(933): Modules\Esim\Controllers\CompatibilityController->samsung()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Esim\Controllers\CompatibilityController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 13:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 13:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
