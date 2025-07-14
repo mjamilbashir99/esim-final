@@ -1560,3 +1560,31 @@ in SYSTEMPATH\Database\Database.php on line 56.
  9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 DEBUG - 2025-07-14 13:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-07-14 13:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 13:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 13:27:43 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-14 13:47:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Hotels/Views/register.php"
+[Method: GET, Route: hotels/register]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Hotels/Views/register.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Hotels/Views/register', [], true)
+ 3 APPPATH\Libraries\Template.php(10): view('Hotels/Views/register', [...])
+ 4 APPPATH\Modules\Hotels\Controllers\AuthController.php(37): App\Libraries\Template->render('Hotels/Views/register', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): Modules\Hotels\Controllers\AuthController->register()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Hotels\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 13:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 13:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

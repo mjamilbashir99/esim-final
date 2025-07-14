@@ -5,8 +5,42 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->group('blog', ['namespace' => 'Modules\Blog\Controllers'], function($routes) {
-   $routes->get('/', 'BlogController::index');
+$routes->group('hotels', ['namespace' => 'Modules\Hotels\Controllers'], function($routes) {
+   //Auth
+   $routes->get('/', 'AuthController::index');
+   $routes->get('register', 'AuthController::register');
+   $routes->get('/hotelBedsApi', 'AuthController::hotelBedsApi');
+   $routes->post('hotel-api/1.0/hotels', 'AuthController::searchNearbyHotels');
+   $routes->get('home', 'AuthController::index');
+   $routes->post('register/submit', 'AuthController::submit');
+   $routes->get('login', 'AuthController::login');
+   $routes->post('login/submit', 'AuthController::loginSubmit');
+   $routes->get('verify-otp', 'AuthController::verifyOtpView');
+   $routes->post('verify-otp/submit', 'AuthController::verifyOtpSubmit');
+   $routes->get('resend-otp', 'AuthController::resendOtp');
+   $routes->post('set-redirect-url', 'AuthController::setRedirectUrl');
+   $routes->get('is-logged-in', 'AuthController::isLoggedIn');
+   $routes->get('logout', 'AuthController::logout');
+   //Hotels
+   $routes->get('get-city-suggestions', 'HotelController::getCitySuggestions');
+   $routes->get('search-hotels', 'HotelController::searchHotels');
+   $routes->get('search-result', 'HotelController::searchResult');
+   $routes->get('hotel-details/(:num)', 'HotelController::hotelDetails/$1');
+   $routes->get('hotel-details', 'HotelController::fetchHotelData');
+   $routes->post('/check-rate', 'HotelController::checkRate');
+   $routes->post('/book-hotel', 'HotelController::bookHotel');
+   $routes->post('/book-room', 'HotelController::bookRoom');
+   $routes->get('checkout', 'HotelController::checkout');
+
+
+
+
+
+
+
+
+
+
 });
 
 $routes->group('', ['namespace' => 'Modules\Esim\Controllers'], function($routes) {
