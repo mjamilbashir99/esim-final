@@ -229,3 +229,1245 @@ in APPPATH\Modules\Blog\Views\index.php on line 3.
  9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:26:44 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:27:13 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:27:36 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:27:40 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:27:57 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:29:15 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:32:12 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:32:20 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:32:25 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: bundle/assests/logo.svg]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:32:42 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:33:17 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:33:20 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:34:17 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:36:16 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: bundle/assests/logo.svg]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:37:04 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: bundle/assests/logo.svg]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:37:17 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: bundle/assests/logo.svg]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:37:25 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:37:28 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: bundle/assests/logo.svg]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:39:07 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:39:43 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:40:26 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:40:46 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:40:49 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: esim/bundle/assests/logo.svg]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:43:55 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: esim/bundle/assests/logo.svg]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:44:56 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Api\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Api\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:46:05 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:46:21 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: esim/bundle/assests/logo.svg]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:47:33 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:47:38 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:47:53 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:47:55 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: esim/bundle/assests/logo.svg]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:48:09 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:48:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:48:19 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:48:50 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:50:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:50:07 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:50:30 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 10:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:52:36 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 10:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 10:52:43 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:05:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "bundles_list.php"
+[Method: GET, Route: esim]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('bundles_list.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('bundles_list', [], true)
+ 3 APPPATH\Libraries\EsimTemplate.php(11): view('bundles_list', [...])
+ 4 APPPATH\Modules\Esim\Controllers\EsimController.php(412): App\Libraries\EsimTemplate->render('bundles_list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): Modules\Esim\Controllers\EsimController->showBundles()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Esim\Controllers\EsimController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:05:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "bundles_list.php"
+[Method: GET, Route: esim]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('bundles_list.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('bundles_list', [], true)
+ 3 APPPATH\Libraries\EsimTemplate.php(11): view('bundles_list', [...])
+ 4 APPPATH\Modules\Esim\Controllers\EsimController.php(412): App\Libraries\EsimTemplate->render('bundles_list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): Modules\Esim\Controllers\EsimController->showBundles()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Esim\Controllers\EsimController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:09:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "bundles_list.php"
+[Method: GET, Route: esim]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('bundles_list.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('bundles_list', [], true)
+ 3 APPPATH\Libraries\EsimTemplate.php(11): view('bundles_list', [...])
+ 4 APPPATH\Modules\Esim\Controllers\EsimController.php(412): App\Libraries\EsimTemplate->render('bundles_list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): Modules\Esim\Controllers\EsimController->showBundles()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Esim\Controllers\EsimController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:10:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "bundles_list.php"
+[Method: GET, Route: esim]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('bundles_list.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('bundles_list', [], true)
+ 3 APPPATH\Libraries\EsimTemplate.php(11): view('bundles_list', [...])
+ 4 APPPATH\Modules\Esim\Controllers\EsimController.php(412): App\Libraries\EsimTemplate->render('bundles_list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): Modules\Esim\Controllers\EsimController->showBundles()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Esim\Controllers\EsimController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:10:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "bundles_list.php"
+[Method: GET, Route: esim]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('bundles_list.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('bundles_list', [], true)
+ 3 APPPATH\Libraries\EsimTemplate.php(11): view('bundles_list', [...])
+ 4 APPPATH\Modules\Esim\Controllers\EsimController.php(412): App\Libraries\EsimTemplate->render('bundles_list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): Modules\Esim\Controllers\EsimController->showBundles()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Esim\Controllers\EsimController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:11:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "bundles_list.php"
+[Method: GET, Route: esim]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('bundles_list.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('bundles_list', [], true)
+ 3 APPPATH\Libraries\EsimTemplate.php(11): view('bundles_list', [...])
+ 4 APPPATH\Modules\Esim\Controllers\EsimController.php(412): App\Libraries\EsimTemplate->render('bundles_list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): Modules\Esim\Controllers\EsimController->showBundles()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Esim\Controllers\EsimController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:11:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "bundles_list.php"
+[Method: GET, Route: esim]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('bundles_list.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('bundles_list', [], true)
+ 3 APPPATH\Libraries\EsimTemplate.php(11): view('bundles_list', [...])
+ 4 APPPATH\Modules\Esim\Controllers\EsimController.php(412): App\Libraries\EsimTemplate->render('bundles_list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): Modules\Esim\Controllers\EsimController->showBundles()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Esim\Controllers\EsimController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:12:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "bundles_list.php"
+[Method: GET, Route: esim]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('bundles_list.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('bundles_list', [], true)
+ 3 APPPATH\Libraries\EsimTemplate.php(11): view('bundles_list', [...])
+ 4 APPPATH\Modules\Esim\Controllers\EsimController.php(412): App\Libraries\EsimTemplate->render('bundles_list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): Modules\Esim\Controllers\EsimController->showBundles()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Esim\Controllers\EsimController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:17:22 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:17:43 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:17:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:24:17 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: esim/bundle/assests/logo.svg]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:24:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cart_view.php"
+[Method: GET, Route: cart]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cart_view.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('cart_view', [], true)
+ 3 APPPATH\Libraries\EsimTemplate.php(11): view('cart_view', [...])
+ 4 APPPATH\Modules\Esim\Controllers\EsimController.php(855): App\Libraries\EsimTemplate->render('cart_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): Modules\Esim\Controllers\EsimController->viewCart()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Esim\Controllers\EsimController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:25:05 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:25:09 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: esim/bundle/assests/logo.svg]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:25:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "checkout.php"
+[Method: GET, Route: eSimcheckout]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('checkout.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('checkout', [], true)
+ 3 APPPATH\Libraries\EsimTemplate.php(11): view('checkout', [...])
+ 4 APPPATH\Modules\Esim\Controllers\EsimController.php(945): App\Libraries\EsimTemplate->render('checkout', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): Modules\Esim\Controllers\EsimController->checkout()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Esim\Controllers\EsimController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:25:47 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:27:35 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:28:52 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:30:35 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:30:37 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:32:52 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 11:38:17 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 11:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 11:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:19:12 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:27:59 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:28:18 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:29:02 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:29:09 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:30:49 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:31:00 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:31:02 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:31:33 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:31:36 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:31:46 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:35:28 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:35:30 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:35:46 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:36:24 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:36:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:37:01 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:47:16 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:47:44 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 12:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:47:58 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:54:43 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 12:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-14 12:54:45 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: cart/count]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Modules\Esim\Controllers\EsimController.php(20): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(903): Modules\Esim\Controllers\EsimController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-14 13:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 13:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 13:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 13:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 13:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 13:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 13:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 13:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 13:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 13:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

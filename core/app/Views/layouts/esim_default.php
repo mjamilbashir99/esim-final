@@ -18,7 +18,7 @@
     <nav id="navbar-example2" class="navbar px-2 px-lg-5 mb-3 position-relative">
         <div class="d-flex align-items-center justify-content-between mbl-w-100 w-100">
             <!-- Desktop Logo -->
-            <a class="navbar-brand d-none d-lg-block w-25" href="/">
+            <a class="navbar-brand d-none d-lg-block w-25" href="<?php echo base_url('/esim') ?>">
                 <p class="h4">eSIM</p>
             </a>
 
@@ -130,16 +130,16 @@
                     aria-label="Close"></button>
             </div>
             <div class="p-4">
-                <a href="/esim">
+                <a href="<?php echo base_url('/esim') ?>">
                     <p class="text-light-green">Home</p>
                 </a>
-                <a href="/api/fetch-bundles">
+                <a href="<?php echo base_url('/fetch-bundles') ?>">
                     <p class="text-light-green">eSIM Data Plans</p>
                 </a>
-                <a href="/compatibility/index">
+                <a href="<?php echo base_url('/compatibility/index') ?>">
                     <p class="text-light-green">Compatibility</p>
                 </a>
-                 <a href="/support">
+                 <a href="<?php echo base_url('/support') ?>">
                     <p class="text-light-green">Support</p>
                 </a>
             </div>

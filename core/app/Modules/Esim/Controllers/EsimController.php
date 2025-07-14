@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Controllers\Api;
+namespace Modules\Esim\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\MarkupModel;
-use App\Models\UserModel;
-use App\Models\CountryModel;
+use Modules\Esim\Models\MarkupModel;
+use Modules\Esim\Models\UserModel;
+use Modules\Blog\Models\CountryModel;
 use App\Libraries\EsimTemplate;
 use CodeIgniter\Pager\Pager;
 
@@ -790,7 +790,7 @@ class EsimController extends BaseController
                     if (isset($b['price'])) {
                         $b['selling_price'] = $this->calculateSellingPrice($b['price']);
                     }
-                    return $this->template->render('bundle_detail', ['bundle' => $b]);
+                    return $this->template->render('Esim/Views/bundle_detail', ['bundle' => $b]);
                 }
             }
 
@@ -852,7 +852,7 @@ class EsimController extends BaseController
         $session = session();
         $cart = $session->get('cart') ?? [];
 
-        return $this->template->render('cart_view', ['cart' => $cart]);
+        return $this->template->render('Esim/Views/cart_view', ['cart' => $cart]);
     }
 
     public function addToCart()
@@ -942,7 +942,7 @@ class EsimController extends BaseController
             return redirect()->to('/login')->with('message', 'Please log in to continue checkout.');
         }
 
-        return $this->template->render('checkout', ['cart' => $cart]);
+        return $this->template->render('Esim/Views/checkout', ['cart' => $cart]);
     }
 
 
@@ -1181,6 +1181,7 @@ class EsimController extends BaseController
 
     public function showSingleBundlePerCountry()
     {
+        // echo "sss";die();
         $apiKey = getenv('ESIM_API_KEY');
         $client = \Config\Services::curlrequest();
         $countryPlans = [];
@@ -1242,7 +1243,7 @@ class EsimController extends BaseController
         $matchingId = $session->get('matchingId');
         $smdpAddress = $session->get('smdpAddress');
         $orderId = $session->get('orderId');
-        return $this->template->render('thankyou', [
+        return $this->template->render('Esim/Views/thankyou', [
             'iccid' => $iccid,
             'matchingId' => $matchingId,
             'smdpAddress' => $smdpAddress,
