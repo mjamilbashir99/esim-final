@@ -41,15 +41,17 @@ $routes->group('', ['namespace' => 'Modules\Esim\Controllers'], function($routes
    
 });
 
+$routes->group('', ['namespace' => 'Modules\Esim\Controllers'], function($routes) {
+   //Support
+   $routes->get('support', 'SupportController::index');
+   $routes->get('support', 'SupportController::index');
+   $routes->post('support/submit', 'SupportController::submit');
+
+});
 
 
 
 
-
-// //Support
-// $routes->get('support', 'Support\SupportController::index');
-// $routes->get('support', 'Support\SupportController::index');
-// $routes->post('support/submit', 'Support\SupportController::submit');
 
 // // //All Destinations 
 // // $routes->get('destinations', 'Api\EsimController::viewAllDestinations');

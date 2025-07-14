@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers\Support;
+namespace Modules\Esim\Controllers;
 
 use App\Libraries\EsimTemplate;
 use App\Controllers\BaseController;
@@ -17,7 +17,7 @@ class SupportController extends BaseController
 
     public function index()
     {
-        return $this->template->render('support/index');
+        return $this->template->render('Esim/Views/support/index');
     }
 
     public function submit()
