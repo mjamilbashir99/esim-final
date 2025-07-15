@@ -1,0 +1,34 @@
+DEBUG - 2025-07-15 07:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 07:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 12:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 12:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-15 12:13:54 --> ErrorException: Undefined variable $totalPages
+[Method: GET, Route: esim]
+in APPPATH\Modules\Esim\Views\bundles_list.php on line 276.
+ 1 APPPATH\Modules\Esim\Views\bundles_list.php(276): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalPages', 'C:\\xampp\\htdocs\\esim\\core\\app\\Modules\\Esim\\Views\\bundles_list.php', 276)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\esim\\core\\app\\Modules\\Esim\\Views\\bundles_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Esim/Views/bundles_list', [], true)
+ 5 APPPATH\Libraries\EsimTemplate.php(11): view('Esim/Views/bundles_list', [...])
+ 6 APPPATH\Modules\Esim\Controllers\EsimController.php(412): App\Libraries\EsimTemplate->render('Esim/Views/bundles_list', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): Modules\Esim\Controllers\EsimController->showBundles()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Esim\Controllers\EsimController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-15 12:13:54 --> ErrorException: Undefined variable $totalPages
+[Method: GET, Route: esim]
+in APPPATH\Modules\Esim\Views\bundles_list.php on line 276.
+ 1 APPPATH\Modules\Esim\Views\bundles_list.php(276): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalPages', 'C:\\xampp\\htdocs\\esim\\core\\app\\Modules\\Esim\\Views\\bundles_list.php', 276)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\esim\\core\\app\\Modules\\Esim\\Views\\bundles_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Esim/Views/bundles_list', [], true)
+ 5 APPPATH\Libraries\EsimTemplate.php(11): view('Esim/Views/bundles_list', [...])
+ 6 APPPATH\Modules\Esim\Controllers\EsimController.php(412): App\Libraries\EsimTemplate->render('Esim/Views/bundles_list', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): Modules\Esim\Controllers\EsimController->showBundles()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Esim\Controllers\EsimController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
