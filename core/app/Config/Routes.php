@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->group('hotels', ['namespace' => 'Modules\Hotels\Controllers'], function($routes) {
+$routes->group('hotels', ['namespace' => 'Modules\Hotels\Controllers'], function ($routes) {
    //Auth
    $routes->get('/', 'AuthController::index');
    $routes->get('register', 'AuthController::register');
@@ -31,7 +31,14 @@ $routes->group('hotels', ['namespace' => 'Modules\Hotels\Controllers'], function
    $routes->post('/book-hotel', 'HotelController::bookHotel');
    $routes->post('/book-room', 'HotelController::bookRoom');
    $routes->get('checkout', 'HotelController::checkout');
-
+   //Dump
+   $routes->get('hotel-dump', 'DumpController::getHotelsDump');
+   $routes->get('hotel-destination-dump', 'DumpController::getHotelsDestinationsDump');
+   $routes->get('hotel-countries-dump', 'DumpController::getHotelsCountriesDump');
+   $routes->get('dump/cleanBlockedAmenitiesFromDB', 'DumpController::cleanBlockedAmenitiesFromDB');
+   //Profile
+   $routes->get('profile/edit', 'ProfileController::edit');
+   $routes->post('profile/update', 'ProfileController::update');
 
 
 
@@ -43,7 +50,7 @@ $routes->group('hotels', ['namespace' => 'Modules\Hotels\Controllers'], function
 
 });
 
-$routes->group('', ['namespace' => 'Modules\Esim\Controllers'], function($routes) {
+$routes->group('', ['namespace' => 'Modules\Esim\Controllers'], function ($routes) {
    $routes->get('/esim', 'EsimController::showBundles');
    $routes->get('esim/bundle/(:any)', 'EsimController::viewbundle/$1');
 
@@ -57,11 +64,9 @@ $routes->group('', ['namespace' => 'Modules\Esim\Controllers'], function($routes
    //All Destinations 
    $routes->get('destinations', 'EsimController::viewAllDestinations');
    $routes->get('destinations/(:any)', 'EsimController::viewAllDestinations/$1');
-
-   
 });
 
-$routes->group('', ['namespace' => 'Modules\Esim\Controllers'], function($routes) {
+$routes->group('', ['namespace' => 'Modules\Esim\Controllers'], function ($routes) {
    // //Compatibility articles 
    $routes->get('compatibility/index', 'CompatibilityController::index');
    $routes->get('compatibility/apple', 'CompatibilityController::apple');
@@ -72,15 +77,13 @@ $routes->group('', ['namespace' => 'Modules\Esim\Controllers'], function($routes
    $routes->get('compatibility/oppo', 'CompatibilityController::oppo');
    $routes->get('compatibility/other', 'CompatibilityController::other');
    $routes->get('compatibility/(:segment)', 'CompatibilityController::show/$1');
-   
 });
 
-$routes->group('', ['namespace' => 'Modules\Esim\Controllers'], function($routes) {
+$routes->group('', ['namespace' => 'Modules\Esim\Controllers'], function ($routes) {
    //Support
    $routes->get('support', 'SupportController::index');
    $routes->get('support', 'SupportController::index');
    $routes->post('support/submit', 'SupportController::submit');
-
 });
 
 
@@ -234,9 +237,3 @@ $routes->group('', ['namespace' => 'Modules\Esim\Controllers'], function($routes
 //       $routes->get('email-templates/delete/(:num)', 'EmailTemplates::delete/$1');
 //    });
 // });
-
-
-
-
-
-

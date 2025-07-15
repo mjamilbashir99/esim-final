@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Controllers\Hotels;
+namespace Modules\Hotels\Controllers;
 
 use App\Controllers\BaseController;
 use App\Libraries\Template;
-use App\Models\HotelModel;
-use App\Models\HotelSyncProgressModel;
-use App\Models\DestinationModel;
-use App\Models\CountryModel;
+use Modules\Hotels\Models\HotelModel;
+use Modules\Hotels\Models\HotelSyncProgressModel;
+use Modules\Hotels\Models\DestinationModel;
+use Modules\Hotels\Models\CountryModel;
 
 class DumpController extends BaseController
 {
@@ -393,7 +393,6 @@ class DumpController extends BaseController
                     ];
 
                     $batchData[] = $hotelData;
-
                 } catch (\Exception $e) {
                     $failedInserts[] = "Hotel Code {$hotel['code']}: " . $e->getMessage();
                 }
