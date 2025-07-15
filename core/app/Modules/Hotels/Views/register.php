@@ -48,7 +48,7 @@
     <?php if (session()->getFlashdata('error')): ?>
       <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
     <?php endif; ?>
-    <form class="needs-validation" action="<?= site_url('register/submit') ?>" method="post" id="registerForm">
+    <form class="needs-validation" action="<?= site_url('hotels/register/submit') ?>" method="post" id="registerForm">
       <!-- <form class="needs-validation" novalidate id="registerForm"> -->
       <div class="mb-3">
         <label for="fullname" class="form-label">Full Name</label>
@@ -61,16 +61,16 @@
         <label for="number" class="form-label">Mobile Number</label>
         <div class="col-md-4 col-sm-6">
           <select
-              id="country-code"
-              name="country_code"
-              class="form-select text-center"
-              data-selected="<?= esc($countryCode ?? '') ?>"
-              required
-              style="width: 100%;">
+            id="country-code"
+            name="country_code"
+            class="form-select text-center"
+            data-selected="<?= esc($countryCode ?? '') ?>"
+            required
+            style="width: 100%;">
 
-              <?php foreach ($country_codes as $code): ?>
-                  <option value="<?= esc($code) ?>">+<?= esc($code) ?></option>
-              <?php endforeach; ?>
+            <?php foreach ($country_codes as $code): ?>
+              <option value="<?= esc($code) ?>">+<?= esc($code) ?></option>
+            <?php endforeach; ?>
           </select>
         </div>
 
@@ -147,7 +147,7 @@
     <div class="text-center mt-3">
       <p>
         Already have an account?
-        <a href="<?= site_url('login') ?>">Login here</a>
+        <a href="<?= site_url('hotels/login') ?>">Login here</a>
       </p>
     </div>
   </div>
