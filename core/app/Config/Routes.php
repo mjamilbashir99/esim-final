@@ -5,6 +5,22 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+// core\app\Modules\Hotels\Controllers\HotelController.php
+
+$routes->group('/', ['namespace' => 'Modules\Hotels\Controllers'], function ($routes) {
+   $routes->get('get-city-suggestions', 'HotelController::getCitySuggestions');
+   $routes->get('search-hotels', 'HotelController::searchHotels');
+   $routes->get('search-result', 'HotelController::searchResult');
+
+
+   
+});
+
+// $routes->get('get-city-suggestions', 'Modules\Hotels\Controllers\HotelController::getCitySuggestions');
+// $routes->get('search-hotels', 'Modules\Hotels\Controllers\HotelController::searchHotels');
+
+
+
 $routes->group('hotels', ['namespace' => 'Modules\Hotels\Controllers'], function ($routes) {
    //Auth
    $routes->get('/', 'AuthController::index');
@@ -22,9 +38,9 @@ $routes->group('hotels', ['namespace' => 'Modules\Hotels\Controllers'], function
    $routes->get('is-logged-in', 'AuthController::isLoggedIn');
    $routes->get('logout', 'AuthController::logout');
    //Hotels
-   $routes->get('get-city-suggestions', 'HotelController::getCitySuggestions');
-   $routes->get('search-hotels', 'HotelController::searchHotels');
-   $routes->get('search-result', 'HotelController::searchResult');
+   // $routes->get('get-city-suggestions', 'HotelController::getCitySuggestions');
+   // $routes->get('search-hotels', 'HotelController::searchHotels');
+   // $routes->get('search-result', 'HotelController::searchResult');
    $routes->get('hotel-details/(:num)', 'HotelController::hotelDetails/$1');
    $routes->get('hotel-details', 'HotelController::fetchHotelData');
    $routes->post('/check-rate', 'HotelController::checkRate');

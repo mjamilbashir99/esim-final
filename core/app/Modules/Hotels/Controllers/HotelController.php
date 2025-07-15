@@ -9,8 +9,7 @@ use Modules\Hotels\Models\BookingModel;
 use Modules\Hotels\Models\HotelModel;
 use Modules\Hotels\Models\MarkupModel;
 use Modules\Hotels\Models\CountryCodeModel;
-use App\Models\DestinationModel;
-use App\Models\HotelModel as ModelsHotelModel;
+
 
 class HotelController extends BaseController
 {
@@ -201,6 +200,7 @@ class HotelController extends BaseController
                 ],
                 'body' => json_encode($payload)
             ]);
+            // var_dump($response);die();
 
             $responseBody = json_decode($response->getBody(), true);
             $hotels = $responseBody['hotels'] ?? [];

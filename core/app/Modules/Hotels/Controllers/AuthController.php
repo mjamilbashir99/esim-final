@@ -373,7 +373,7 @@ class AuthController extends BaseController
                 'logged_in'  => true,
             ]);
 
-            $redirectUrl = session()->get('redirect_url') ?? '/home';
+            $redirectUrl = session()->get('redirect_url') ?? 'hotels/home';
             session()->remove('redirect_url');
 
             return redirect()->to($redirectUrl);
