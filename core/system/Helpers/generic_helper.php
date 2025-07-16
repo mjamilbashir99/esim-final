@@ -1,4 +1,6 @@
 <?php
+use Modules\Hotels\Models\MarkupModel;
+
 
 if (!function_exists('fetch_hotelbeds_hotels')) {
     function fetch_hotelbeds_hotels($hotelCodes = [])
@@ -49,10 +51,44 @@ if (!function_exists('fetch_hotelbeds_hotels')) {
     if (!function_exists('calculateProfitPrice')) {
         function calculateProfitPrice($netPrice)
         {
-            $profitMultiplier = 1;
+            $markupModel = new MarkupModel();
+            $markup = $markupModel->first(); 
+            // var_dump($markup);die();
+            $markupPercent = isset($markup['b2c_markup']) ? (float)$markup['b2c_markup'] : 0;
+            // var_dump($markupPercent);die();
+
+            $convertedProfit = $markupPercent/100;
+            $convertedProfitAmount = $convertedProfit + 1;
+            //  var_dump($convertedProfitAmount);die();
+            $profitMultiplier = $convertedProfitAmount;
+            // var_dump($convertedProfitAmount);die();
+            // $profitMultiplier = $markupPercent;
             return round($netPrice * $profitMultiplier, 2);
         }
     }
+
+
+    if (!function_exists('getAvailableImageUrl')) {
+        function getAvailableImageUrl($path) {
+            $baseUrls = [
+                'https://photos.hotelbeds.com/giata/xxl/',
+                'https://photos.hotelbeds.com/giata/xl/',
+                'https://photos.hotelbeds.com/giata/bigger/',
+                'https://photos.hotelbeds.com/giata/'
+            ];
+
+            foreach ($baseUrls as $base) {
+                $url = $base . $path;
+                $headers = @get_headers($url, 1);
+                if ($headers && strpos($headers[0], '200') !== false) {
+                    return $url;
+                }
+            }
+
+            return null;
+        }
+    }
+
 
 
 

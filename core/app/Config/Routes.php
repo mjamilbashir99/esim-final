@@ -7,11 +7,15 @@ use CodeIgniter\Router\RouteCollection;
  */
 // core\app\Modules\Hotels\Controllers\HotelController.php
 
+// $routes->get('check-rate', 'Modules\Hotels\Controllers\HotelController::checkRate');
 $routes->group('/', ['namespace' => 'Modules\Hotels\Controllers'], function ($routes) {
    $routes->get('get-city-suggestions', 'HotelController::getCitySuggestions');
    $routes->get('search-hotels', 'HotelController::searchHotels');
    $routes->get('search-result', 'HotelController::searchResult');
-   $routes->post('check-rate', 'HotelController::checkRate');
+$routes->post('check-rate', 'HotelController::checkRate');
+// $routes->get('check-rate', 'HotelController::checkRate');
+
+   
 });
 
 // $routes->get('get-city-suggestions', 'Modules\Hotels\Controllers\HotelController::getCitySuggestions');
@@ -43,7 +47,8 @@ $routes->group('hotels', ['namespace' => 'Modules\Hotels\Controllers'], function
    $routes->get('hotel-details', 'HotelController::fetchHotelData');
 
    $routes->post('/book-hotel', 'HotelController::bookHotel');
-   $routes->post('/book-room', 'HotelController::bookRoom');
+   $routes->post('book-room', 'HotelController::bookRoom');
+   // $routes->get('book-room', 'HotelController::bookRoom');
    $routes->get('checkout', 'HotelController::checkout');
    //Dump
    $routes->get('hotel-dump', 'DumpController::getHotelsDump');

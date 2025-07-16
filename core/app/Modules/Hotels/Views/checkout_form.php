@@ -210,7 +210,7 @@
       Almost done! Just fill in the * required info
     </p>
 
-    <form action="/book-room" method="POST" class=" row flex-column flex-lg-row">
+    <form action="hotels/book-room" method="POST" class=" row flex-column flex-lg-row">
       <input type="hidden" value="<?= $price ?>" name="hotel_price">
 
       <!-- Name Fields -->
@@ -393,7 +393,7 @@
           allowEscapeKey: false
         }).then((result) => {
           if (result.isConfirmed) {
-            window.location.href = "<?= base_url('home') ?>";
+            window.location.href = "<?= base_url('hotels/home') ?>";
           }
         });
         return;
@@ -465,7 +465,7 @@
     const formData = new FormData(form);
     formData.append("payment_method_id", paymentMethod.id);
 
-    const response = await fetch("<?= base_url('book-room') ?>", {
+    const response = await fetch("<?= base_url('hotels/book-room') ?>", {
       method: "POST",
       body: formData,
     });

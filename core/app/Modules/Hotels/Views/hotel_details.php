@@ -612,7 +612,7 @@ function checkRate(form) {
     const row = form.closest('tr');
     const infoRow = row.nextElementSibling;
 
-    fetch('<?= base_url('hotels/check-rate') ?>', {
+    fetch('<?= base_url('check-rate') ?>', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
@@ -696,7 +696,7 @@ message = `
         <strong>Net Price:</strong> ${currencySymbol} ${price}<br>
         <div class="mt-2">
         ${cancellation}
-            <form action="<?= base_url('checkout') ?>" method="GET">
+            <form action="<?= base_url('hotels/checkout') ?>" method="GET">
                 <input type="hidden" name="rateKey" value="${encodeURIComponent(rateKey)}">
                 <input type="hidden" name="hotelName" value="${encodeURIComponent(hotelName)}">
                 <input type="hidden" name="price" value="${encodeURIComponent(price)}">

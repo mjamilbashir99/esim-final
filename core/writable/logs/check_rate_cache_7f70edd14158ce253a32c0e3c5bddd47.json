@@ -1,0 +1,93 @@
+{
+    "auditData": {
+        "processTime": "137",
+        "timestamp": "2025-07-16 12:50:05.890",
+        "requestHost": "182.188.107.84, 15.158.33.47, 10.214.141.125, 10.214.128.41",
+        "serverId": "ip-10-214-130-247.eu-central-1.compute.internal",
+        "environment": "[awseucentral1, awseucentral1c, ip_10_214_130_247, eucentral1, secret]",
+        "release": "",
+        "token": "47AD267253CD481BB3B5F32F6D1CDAF3",
+        "internal": "0|07~~22abd~1665505550~N~~~NOR~~9DE3472C6DC5488175266566363905AAUK0055002000040822abd|UK|08|55|1|||||||||||R|1|3|~1~2~0|0|20||4|4d16afaf83ef394e5c96497bfc1026d4||||"
+    },
+    "hotel": {
+        "checkOut": "2025-07-19",
+        "checkIn": "2025-07-16",
+        "code": 136,
+        "name": "Ilunion Alcora Sevilla",
+        "categoryCode": "4EST",
+        "categoryName": "4 STARS",
+        "destinationCode": "SVQ",
+        "destinationName": "Seville",
+        "zoneCode": 99,
+        "zoneName": "Seville",
+        "latitude": "37.37155780000000000000",
+        "longitude": "-6.03515430000000000000",
+        "rooms": [
+            {
+                "code": "DBT.ST",
+                "name": "STANDARD DOUBLE ROOM",
+                "rates": [
+                    {
+                        "rateKey": "20250716|20250719|W|102|136|DBT.ST|OPQ-EB10RO|RO||1~2~0||N@07~~22abd~1665505550~N~~~NOR~~9DE3472C6DC5488175266566363905AAUK0055002000040822abd",
+                        "rateClass": "NOR",
+                        "rateType": "BOOKABLE",
+                        "net": "189.42",
+                        "allotment": 265,
+                        "rateComments": "Pets are allowed. Hotel will apply supplement per night. Guests have to confirm this is a reservation with pet and call to hotel before check to verify hotelier availability and guests will have necessary before arrival. Pet are allow just in pet friendly rooms. In another type of rooms are not allowed. When guests arrived, hotelier will give all terms and conditions about hotel access, it must be read and signed before. .  Key Collection 14:00-23:59.Early departure.Check-in hour 14:00-00:00.Car park YES (With additional debit notes) 6.00 EUR Per unit\/night.Identification card at arrival.Deposit on arrival.Minimum check-in age 18.",
+                        "paymentType": "AT_WEB",
+                        "packaging": false,
+                        "boardCode": "RO",
+                        "boardName": "ROOM ONLY",
+                        "cancellationPolicies": [
+                            {
+                                "amount": "189.42",
+                                "from": "2025-07-15T23:59:00+02:00"
+                            }
+                        ],
+                        "rateBreakDown": {
+                            "rateDiscounts": [
+                                {
+                                    "code": "SDD",
+                                    "name": "SPECIAL DISCOUNT",
+                                    "amount": "-48.31"
+                                },
+                                {
+                                    "code": "TOC",
+                                    "name": "TAILORED CAMPAIGN",
+                                    "amount": "-3.87"
+                                },
+                                {
+                                    "code": "AGD",
+                                    "name": "HBG select",
+                                    "amount": "-0.03"
+                                }
+                            ]
+                        },
+                        "rooms": 1,
+                        "adults": 2,
+                        "children": 0,
+                        "offers": [
+                            {
+                                "code": "9010",
+                                "name": "Tailored Campaign",
+                                "amount": "-3.87"
+                            },
+                            {
+                                "code": "9009",
+                                "name": "Special discount",
+                                "amount": "-48.31"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "totalNet": "189.42",
+        "currency": "EUR",
+        "paymentDataRequired": false,
+        "modificationPolicies": {
+            "cancellation": true,
+            "modification": true
+        }
+    }
+}

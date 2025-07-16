@@ -343,7 +343,7 @@ class HotelController extends BaseController
         $markupPercent = isset($markup['b2c_markup']) ? (float)$markup['b2c_markup'] : 0;
         // var_dump($markupPercent);die();
 
-        return $this->template->render('home/search_result', [
+        return $this->template->render('Hotels/Views/search_result', [
             'hotels' => $hotels,
             'currentPage' => $currentPage,
             'destination' => $destination,
@@ -458,7 +458,7 @@ class HotelController extends BaseController
         $convertedProfit = $markupPercent/100;
         $convertedProfitAmount = $convertedProfit + 1;
        
-        return $this->template->render('home/hotel_details', [
+        return $this->template->render('Hotels/Views/hotel_details', [
             'hotelDetails' => $responseBody,
             'rateData' => $hotelRates,
             'getSearchedAdults' => $getSearchedAdults,
@@ -470,6 +470,7 @@ class HotelController extends BaseController
 
     public function checkRate()
     {
+        // die("hello");
         $rateKey = $this->request->getPost('rateKey');
 
         if (!$rateKey) {
@@ -546,6 +547,7 @@ class HotelController extends BaseController
 
     public function bookRoom()
     {
+        // echo "hello";die();
         helper('text');
         $session = session();
         $email = session()->get('user_email');
@@ -655,7 +657,7 @@ class HotelController extends BaseController
 
             $this->sendBookingConfirmationEmail($email, $name, $bookingDataEmail);
             
-            $html = $this->template->render('home/thankyou', ['booking' => $body['booking'],'price' => $price]);
+            $html = $this->template->render('Hotels/Views/thankyou', ['booking' => $body['booking'],'price' => $price]);
 
             return $this->response->setJSON([
                 'html' => $html
@@ -675,7 +677,7 @@ class HotelController extends BaseController
 
         if (!$session->get('logged_in')) {
             $session->set('redirect_url', current_url() . '?' . $_SERVER['QUERY_STRING']);
-            return redirect()->to('/login')->with('error', 'Please log in to continue to checkout.');
+            return redirect()->to('hotels/login')->with('error', 'Please log in to continue to checkout.');
         }
 
         $searchResults = $session->get('hotel_search_results');
@@ -733,7 +735,7 @@ class HotelController extends BaseController
             return redirect()->to('/')->with('error', 'Missing rate key.');
         }
 
-        return $this->template->render('home/checkout_form', [
+        return $this->template->render('Hotels/Views/checkout_form', [
             'rateKey' => $rateKey,
             'hotelName' => $hotelName,
             'price' => $price,

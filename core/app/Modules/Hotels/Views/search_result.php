@@ -1133,7 +1133,7 @@
     </script>
     <script>
 function viewHotelDetails(code) {
-    window.open("<?= site_url('hotel-details') ?>/" + code, "_blank");
+    window.open("<?= site_url('hotels/hotel-details') ?>/" + code, "_blank");
 }
     </script>
 
