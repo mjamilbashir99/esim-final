@@ -612,7 +612,7 @@ function checkRate(form) {
     const row = form.closest('tr');
     const infoRow = row.nextElementSibling;
 
-    fetch('<?= base_url('check-rate') ?>', {
+    fetch('<?= base_url('hotels/check-rate') ?>', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',

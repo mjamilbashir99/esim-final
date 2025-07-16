@@ -201,7 +201,7 @@
 
     <script>
         function viewHotelDetails(code) {
-            window.location.href = "<?= site_url('hotel-details') ?>/" + code;
+            window.location.href = "<?= site_url('hotels/hotel-details') ?>/" + code;
         }
     </script>
     <script>

@@ -11,9 +11,7 @@ $routes->group('/', ['namespace' => 'Modules\Hotels\Controllers'], function ($ro
    $routes->get('get-city-suggestions', 'HotelController::getCitySuggestions');
    $routes->get('search-hotels', 'HotelController::searchHotels');
    $routes->get('search-result', 'HotelController::searchResult');
-
-
-   
+   $routes->post('check-rate', 'HotelController::checkRate');
 });
 
 // $routes->get('get-city-suggestions', 'Modules\Hotels\Controllers\HotelController::getCitySuggestions');
@@ -43,7 +41,7 @@ $routes->group('hotels', ['namespace' => 'Modules\Hotels\Controllers'], function
    // $routes->get('search-result', 'HotelController::searchResult');
    $routes->get('hotel-details/(:num)', 'HotelController::hotelDetails/$1');
    $routes->get('hotel-details', 'HotelController::fetchHotelData');
-   $routes->post('/check-rate', 'HotelController::checkRate');
+
    $routes->post('/book-hotel', 'HotelController::bookHotel');
    $routes->post('/book-room', 'HotelController::bookRoom');
    $routes->get('checkout', 'HotelController::checkout');

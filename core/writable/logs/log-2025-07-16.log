@@ -1,0 +1,111 @@
+DEBUG - 2025-07-16 11:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-16 11:10:35 --> Hotel Search Error: 6 : Could not resolve host: api.test.hotelbeds.com
+CRITICAL - 2025-07-16 11:13:30 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: GET, Route: get-city-suggestions]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 APPPATH\Modules\Hotels\Controllers\HotelController.php(37): CodeIgniter\Database\Config::connect()
+ 3 SYSTEMPATH\CodeIgniter.php(933): Modules\Hotels\Controllers\HotelController->getCitySuggestions()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Hotels\Controllers\HotelController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-16 11:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-16 11:13:37 --> mysqli_sql_exception: Unknown column 'amenities' in 'field list' in C:\xampp\htdocs\esim\core\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\esim\core\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `hotel_c...', 0)
+#1 C:\xampp\htdocs\esim\core\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `hotel_c...')
+#2 C:\xampp\htdocs\esim\core\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `hotel_c...')
+#3 C:\xampp\htdocs\esim\core\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `hotel_c...', Array, false)
+#4 C:\xampp\htdocs\esim\core\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\esim\core\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\esim\core\app\Modules\Hotels\Controllers\HotelController.php(325): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\esim\core\system\CodeIgniter.php(933): Modules\Hotels\Controllers\HotelController->searchResult()
+#8 C:\xampp\htdocs\esim\core\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Hotels\Controllers\HotelController))
+#9 C:\xampp\htdocs\esim\core\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\esim\core\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\esim\core\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\esim\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-16 11:13:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'amenities' in 'field list'
+[Method: GET, Route: search-result]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `hotel_code`, `amenities`, `chain_code`, `thumbnail_url`
+FROM `hotels`
+WHERE `hotel_code` IN :hotel_code:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Modules\Hotels\Controllers\HotelController.php(325): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): Modules\Hotels\Controllers\HotelController->searchResult()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Hotels\Controllers\HotelController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-16 11:13:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'amenities' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `hotel_code`, `amenities`, `chain_code`, `thumbnail_url`
+FROM `hotels`
+WHERE `hotel_code` IN (136,67,88,74,54,16,13,132,126,122,130,87,9,108,95,33,84,50,7,79,8,129,93,2,18,78,102,109,125,90,82,51,113,30,65,26,100,63,1,48,99,43,64,29,10,71,42,62,112,21,25,57,103,69,104)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `hotel_code`, `amenities`, `chain_code`, `thumbnail_url`
+FROM `hotels`
+WHERE `hotel_code` IN (136,67,88,74,54,16,13,132,126,122,130,87,9,108,95,33,84,50,7,79,8,129,93,2,18,78,102,109,125,90,82,51,113,30,65,26,100,63,1,48,99,43,64,29,10,71,42,62,112,21,25,57,103,69,104)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `hotel_code`, `amenities`, `chain_code`, `thumbnail_url`
+FROM `hotels`
+WHERE `hotel_code` IN :hotel_code:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Modules\Hotels\Controllers\HotelController.php(325): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): Modules\Hotels\Controllers\HotelController->searchResult()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Hotels\Controllers\HotelController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-16 11:13:38 --> [Caused by] mysqli_sql_exception: Unknown column 'amenities' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `hotel_code`, `amenities`, `chain_code`, `thumbnail_url`
+FROM `hotels`
+WHERE `hotel_code` IN (136,67,88,74,54,16,13,132,126,122,130,87,9,108,95,33,84,50,7,79,8,129,93,2,18,78,102,109,125,90,82,51,113,30,65,26,100,63,1,48,99,43,64,29,10,71,42,62,112,21,25,57,103,69,104)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `hotel_code`, `amenities`, `chain_code`, `thumbnail_url`
+FROM `hotels`
+WHERE `hotel_code` IN (136,67,88,74,54,16,13,132,126,122,130,87,9,108,95,33,84,50,7,79,8,129,93,2,18,78,102,109,125,90,82,51,113,30,65,26,100,63,1,48,99,43,64,29,10,71,42,62,112,21,25,57,103,69,104)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `hotel_code`, `amenities`, `chain_code`, `thumbnail_url`
+FROM `hotels`
+WHERE `hotel_code` IN (136,67,88,74,54,16,13,132,126,122,130,87,9,108,95,33,84,50,7,79,8,129,93,2,18,78,102,109,125,90,82,51,113,30,65,26,100,63,1,48,99,43,64,29,10,71,42,62,112,21,25,57,103,69,104)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `hotel_code`, `amenities`, `chain_code`, `thumbnail_url`
+FROM `hotels`
+WHERE `hotel_code` IN :hotel_code:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Modules\Hotels\Controllers\HotelController.php(325): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): Modules\Hotels\Controllers\HotelController->searchResult()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Modules\Hotels\Controllers\HotelController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-16 11:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 11:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 12:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 12:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 12:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 12:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-16 12:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
