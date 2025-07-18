@@ -391,20 +391,28 @@
     <div class="container mt-5">
         <div class="row g-4 justify-content-center">
             <!-- Card 1 -->
+            <?php
+            $today = date('d+F+Y');
+            $threeDaysLater = date('d+F+Y', strtotime('+3 days'));
+            ?>
+
             <div class="col-md-4">
-                <div class="card border-0 shadow-sm h-100 hover-scale rounded-3 overflow-hidden">
-                    <div class="position-relative">
-                        <img src="<?= base_url('/assets/img/hotel1.jpg') ?>" class="card-img-top hotel-img" alt="North Beach Hotel">
-                        <span class="discount-badge">-34%</span>
+                <a href="<?= base_url("search-result?destination=Ohtels+Villa+Dorada&checkin=$today&checkout=$threeDaysLater&adults=2&children=0&rooms=1&passenger_summary=2+Adults,+1+Room&children_ages=") ?>">
+                    <div class="card border-0 shadow-sm h-100 hover-scale rounded-3 overflow-hidden">
+                        <div class="position-relative">
+                            <img src="<?= base_url('/assets/img/hotel1.jpg') ?>" class="card-img-top hotel-img" alt="North Beach Hotel">
+                            <span class="discount-badge">-34%</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-semibold">Ohtels Villa Dorada</h5>
+                        </div>
                     </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-semibold">North Beach Hotel</h5>
-                    </div>
-                </div>
+                </a>
             </div>
 
             <!-- Card 2 -->
             <div class="col-md-4">
+                <a href="<?= base_url("search-result?destination=Ohtels+Villa+Dorada&checkin=$today&checkout=$threeDaysLater&adults=2&children=0&rooms=1&passenger_summary=2+Adults,+1+Room&children_ages=") ?>">
                 <div class="card border-0 shadow-sm h-100 hover-scale rounded-3 overflow-hidden">
                     <div class="position-relative">
                         <img src="<?= base_url('/assets/img/hotel2.jpg') ?>" class="card-img-top hotel-img" alt="Westgate Palace Resort">
@@ -414,10 +422,12 @@
                         <h5 class="card-title fw-semibold">Westgate Palace Resort</h5>
                     </div>
                 </div>
+                </a>
             </div>
 
             <!-- Card 3 -->
             <div class="col-md-4">
+                 <a href="<?= base_url("search-result?destination=Ohtels+Villa+Dorada&checkin=$today&checkout=$threeDaysLater&adults=2&children=0&rooms=1&passenger_summary=2+Adults,+1+Room&children_ages=") ?>">
                 <div class="card border-0 shadow-sm h-100 hover-scale rounded-3 overflow-hidden">
                     <div class="position-relative">
                         <img src="<?= base_url('/assets/img/hotel3.jpg') ?>" class="card-img-top hotel-img" alt="New Otani Tokyo Garden">
@@ -427,6 +437,7 @@
                         <h5 class="card-title fw-semibold">New Otani Tokyo Garden</h5>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </div>
