@@ -976,7 +976,7 @@
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 ">
-        <div style="
+    <div style="
         background: linear-gradient(135deg, #d3ffe8, #e9efff, #ffd6e8);
         border-radius: 20px;
         padding: 45px 35px;
@@ -991,62 +991,62 @@
         overflow: hidden;
         animation: floatIn 0.6s ease-in-out;
     ">
-            <div class="fancy-spinner" style="margin: 0 auto 25px;"></div>
+        <div class="fancy-spinner" style="margin: 0 auto 25px;"></div>
 
-            <p style="
+        <p style="
             font-size: 18px;
             font-weight: 700;
             color: #202124;
             margin-bottom: 14px;
         ">
-                Searching for hotels...
-            </p>
+            Searching for hotels...
+        </p>
 
-            <div id="search-summary" style="
+        <div id="search-summary" style="
             font-size: 15px;
             color: #333;
             line-height: 1.5;
         "></div>
-        </div>
     </div>
+</div>
 
-    <style>
-        .fancy-spinner {
-            width: 56px;
-            height: 56px;
-            border: 5px solid transparent;
-            border-top: 5px solid #00f0ff;
-            border-right: 5px solid #ff00cc;
-            border-radius: 50%;
-            animation: spin 0.85s linear infinite;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
-            box-shadow:
-                0 0 10px #00f0ff,
-                0 0 10px #ff00cc inset;
+<style>
+    .fancy-spinner {
+        width: 56px;
+        height: 56px;
+        border: 5px solid transparent;
+        border-top: 5px solid #00f0ff;
+        border-right: 5px solid #ff00cc;
+        border-radius: 50%;
+        animation: spin 0.85s linear infinite;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+        box-shadow:
+            0 0 10px #00f0ff,
+            0 0 10px #ff00cc inset;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
         }
 
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 
-            100% {
-                transform: rotate(360deg);
-            }
+    @keyframes floatIn {
+        0% {
+            transform: scale(0.9) translateY(20px);
+            opacity: 0;
         }
 
-        @keyframes floatIn {
-            0% {
-                transform: scale(0.9) translateY(20px);
-                opacity: 0;
-            }
-
-            100% {
-                transform: scale(1) translateY(0);
-                opacity: 1;
-            }
+        100% {
+            transform: scale(1) translateY(0);
+            opacity: 1;
         }
-    </style>
+    }
+</style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Toastr JS -->
@@ -1076,9 +1076,8 @@
 
     let fpInstance;
 
-    // Get URL Params like $_GET
     const urlParams = new URLSearchParams(window.location.search);
-    const childrenAgesParam = urlParams.get('children_ages'); // e.g. "1,6"
+    const childrenAgesParam = urlParams.get('children_ages');
 
     const childrenAgesFromSession = childrenAgesParam ?
         childrenAgesParam.split(',').map(age => parseInt(age.trim(), 10)) :
@@ -1109,7 +1108,6 @@
                     const checkIn = selectedDates[0];
                     const checkOut = selectedDates[1];
 
-                    // Check for same day selection
                     if (checkIn.toDateString() === checkOut.toDateString()) {
                         alert("Check-in and Check-out date cannot be the same.");
                         instance.clear();
@@ -1118,10 +1116,8 @@
                         return;
                     }
 
-                    // Calculate difference in days
                     const nights = Math.round((checkOut - checkIn) / (1000 * 60 * 60 * 24));
 
-                    // Check for range more than 30 days
                     if (nights > 30) {
                         alert("You cannot select more than 30 days.");
                         instance.clear();
@@ -1131,7 +1127,6 @@
                         return;
                     }
 
-                    // Set values if valid
                     document.getElementById("checkin").value = flatpickr.formatDate(checkIn, "d F Y");
                     document.getElementById("checkout").value = flatpickr.formatDate(checkOut, "d F Y");
                     document.getElementById("nights").value = nights;
@@ -1209,13 +1204,12 @@
             select.name = "children_ages[]";
             select.id = `childAge${i}`;
             select.className = "form-control mt-2 fs-16px lato fw-normal";
-            select.required = false; // <-- No longer required
+            select.required = false;
 
             const selectedAgeRaw = childrenAgesFromSession[i];
             const selectedAge = (typeof selectedAgeRaw === 'string' || typeof selectedAgeRaw === 'number') ?
                 parseInt(selectedAgeRaw, 10) : 0;
 
-            // Option for "0" as default (not selected)
             const defaultOption = document.createElement("option");
             defaultOption.value = "0";
             defaultOption.textContent = `0`;
@@ -1274,10 +1268,7 @@
     });
 </script>
 
-
-<!-- no -->
 <script>
-    // Display none the popup by default
     document.addEventListener('DOMContentLoaded', () => {
         loader = document.getElementById('loader');
         document.getElementById('loader').style.display = 'none';
@@ -1415,7 +1406,6 @@
 
         let hasError = false;
 
-        // Basic validation
         if (!destination.value.trim()) {
             destination.classList.add('is-invalid');
             hasError = true;
@@ -1433,14 +1423,12 @@
 
         if (hasError) return;
 
-        // Collect children ages from selects
         const childAgeSelects = document.querySelectorAll('#childAges select[name="children_ages[]"]');
         let childrenAges = [];
         let allAgesSelected = true;
 
         childAgeSelects.forEach(select => {
             const ageValue = parseInt(select.value, 10);
-            // If it's not a number, consider it 0 (safety fallback)
             childrenAges.push(isNaN(ageValue) ? 0 : ageValue);
         });
 
@@ -1478,7 +1466,6 @@
         document.getElementById('search-summary').innerHTML = summaryHTML;
         document.getElementById('loader').style.display = 'flex';
 
-        // Construct URL with query parameters
         const params = new URLSearchParams({
             destination: destination.value,
             checkin: checkin.value,
@@ -1489,7 +1476,6 @@
             children: children,
         });
         if (childrenAges.length > 0) {
-            // Send children ages as comma separated string
             params.append('children_ages', childrenAges.join(','));
         }
 
@@ -1521,7 +1507,6 @@
     }
 
 
-    // Clear red border on input/change
     document.addEventListener('DOMContentLoaded', () => {
         const fields = ['searchInput', 'dateRange', 'passenger'];
 
