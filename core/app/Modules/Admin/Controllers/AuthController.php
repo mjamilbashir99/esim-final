@@ -19,7 +19,7 @@ class AuthController extends BaseController
             return redirect()->to('/admin/all-bookings');
         }
 
-        return view('admin/auth/login');
+        return view('Admin/Views/auth/login');
     }
 
     public function loginSubmit()

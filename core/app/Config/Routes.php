@@ -63,6 +63,24 @@ $routes->group('admin', ['namespace' => 'Modules\Admin\Controllers'], function (
    $routes->get('login', 'AuthController::login');
    $routes->post('login/submit', 'AuthController::loginSubmit');
    $routes->get('logout', 'AuthController::logout');
+
+   $routes->get('dashboard', 'AdminController::index');
+   $routes->get('all-users', 'AdminController::listUsers');
+   $routes->get('all-bookings', 'AdminController::listBookings');
+   $routes->get('hotels', 'AdminController::hotels'); 
+   $routes->post('save-hotel', 'AdminController::saveHotel');
+   $routes->get('delete-user/(:num)', 'AdminController::deleteUser/$1');
+   $routes->post('delete-hotel', 'AdminController::deleteHotel');
+   $routes->post('update-user', 'AdminController::updateUser');
+   $routes->post('update-hotel', 'AdminController::updatehotel');
+
+   // Email Templates
+   $routes->get('email-templates', 'EmailTemplates::index');
+   $routes->get('email-templates/create', 'EmailTemplates::create'); 
+   $routes->post('email-templates/store', 'EmailTemplates::store');  
+   $routes->get('email-templates/edit/(:num)', 'EmailTemplates::edit/$1');
+   $routes->post('email-templates/update/(:num)', 'EmailTemplates::update/$1');
+   $routes->get('email-templates/delete/(:num)', 'EmailTemplates::delete/$1');
 });
 
 
