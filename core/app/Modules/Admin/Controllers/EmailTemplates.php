@@ -31,7 +31,7 @@ class EmailTemplates extends BaseController
             'title' => 'Email Templates'
         ];
 
-        return $this->template->render('Admin/email_templates/index', $data);
+        return $this->template->render('Admin/Views/email_templates/index', $data);
     }
 
     /**
@@ -43,7 +43,7 @@ public function create()
         'title' => 'Create New Template'
     ];
 
-    return $this->template->render('Admin/email_templates/create', $data);
+    return $this->template->render('Admin/Views/email_templates/create', $data);
 }
 
 /**
@@ -115,7 +115,7 @@ public function store()
             'title' => 'Edit Template'
         ];
 
-        return $this->template->render('Admin/email_templates/edit', $data);
+        return $this->template->render('Admin/Views/email_templates/edit', $data);
     }
 
     /**

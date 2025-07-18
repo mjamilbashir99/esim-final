@@ -25,16 +25,13 @@ class AdminController extends BaseController
 
     public function index()
     {
-        // Load necessary models
         $userModel = new UserModel();
         $bookingModel = new BookingModel();
         $markupModel = new MarkupModel();
 
-        // Get current month and year for monthly bookings
         $currentMonth = date('m');
         $currentYear = date('Y');
 
-        // Get the latest active markup
         $markup = $markupModel->where('status', 'enabled')
             ->orderBy('created_at', 'DESC')
             ->first();
@@ -50,7 +47,7 @@ class AdminController extends BaseController
             'b2c_percentage' => $markup ? $markup['b2c_markup'] : 0
         ];
 
-        return $this->template->render('admin/index', $data);
+        return $this->template->render('Admin/Views/index', $data);
     }
 
     public function listUsers()
@@ -67,7 +64,7 @@ class AdminController extends BaseController
             'title' => 'All Users'
         ];
 
-        return $this->template->render('admin/all-users', $data);
+        return $this->template->render('Admin/Views/all-users', $data);
     }
     public function listBookings()
     {
@@ -79,7 +76,7 @@ class AdminController extends BaseController
             'title' => 'All Bookings'
         ];
 
-        return $this->template->render('admin/all-bookings', $data);
+        return $this->template->render('Admin/Views/all-bookings', $data);
     }
     public function hotels()
     {
@@ -92,7 +89,7 @@ class AdminController extends BaseController
             'title' => 'Hotels'
         ];
 
-        return $this->template->render('admin/hotels', $data);
+        return $this->template->render('Admin/Views/hotels', $data);
     }
 
     public function saveHotel()
@@ -273,6 +270,6 @@ class AdminController extends BaseController
         ];
 
         // Template render karna aur data pass karna
-        return $this->template->render('admin/hotels', $data);
+        return $this->template->render('Admin/Views/hotels', $data);
     }
 }
