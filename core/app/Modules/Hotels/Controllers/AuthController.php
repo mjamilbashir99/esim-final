@@ -33,7 +33,7 @@ class AuthController extends BaseController
             'title' => 'Hotel Room Discount | Register',
             'country_codes' => $countryCodeModel->getCountryCodes(),
         ];
-        
+
         return $this->template->render('Hotels/Views/register', $data);
     }
 

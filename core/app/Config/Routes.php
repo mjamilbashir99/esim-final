@@ -12,16 +12,14 @@ $routes->group('/', ['namespace' => 'Modules\Hotels\Controllers'], function ($ro
    $routes->get('get-city-suggestions', 'HotelController::getCitySuggestions');
    $routes->get('search-hotels', 'HotelController::searchHotels');
    $routes->get('search-result', 'HotelController::searchResult');
-$routes->post('check-rate', 'HotelController::checkRate');
-// $routes->get('check-rate', 'HotelController::checkRate');
+   $routes->post('check-rate', 'HotelController::checkRate');
+   // $routes->get('check-rate', 'HotelController::checkRate');
 
-   
+
 });
 
 // $routes->get('get-city-suggestions', 'Modules\Hotels\Controllers\HotelController::getCitySuggestions');
 // $routes->get('search-hotels', 'Modules\Hotels\Controllers\HotelController::searchHotels');
-
-
 
 $routes->group('hotels', ['namespace' => 'Modules\Hotels\Controllers'], function ($routes) {
    //Auth
@@ -58,16 +56,15 @@ $routes->group('hotels', ['namespace' => 'Modules\Hotels\Controllers'], function
    //Profile
    $routes->get('profile/edit', 'ProfileController::edit');
    $routes->post('profile/update', 'ProfileController::update');
-
-
-
-
-
-
-
-
-
 });
+
+
+$routes->group('admin', ['namespace' => 'Modules\Admin\Controllers'], function ($routes) {
+   $routes->get('login', 'AuthController::login');
+   $routes->post('login/submit', 'AuthController::loginSubmit');
+   $routes->get('logout', 'AuthController::logout');
+});
+
 
 $routes->group('', ['namespace' => 'Modules\Esim\Controllers'], function ($routes) {
    $routes->get('/esim', 'EsimController::showBundles');
