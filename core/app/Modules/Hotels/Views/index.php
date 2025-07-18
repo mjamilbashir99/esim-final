@@ -36,7 +36,6 @@
                     </div>
                 </div>
 
-
                 <!-- Dates & Nights -->
                 <div class="row g-3 mb-4">
                     <div class="col-md-8">
@@ -252,7 +251,6 @@
         }
     </style>
 
-    <!-- 🔍 Input Spinner (Place inside your destination input group) -->
     <div id="searchLoader">
         <svg width="22" height="22" viewBox="0 0 50 50">
             <circle cx="25" cy="25" r="20" stroke="#ffffffcc" stroke-width="4" fill="none" stroke-linecap="round" />
@@ -260,55 +258,69 @@
     </div>
     <div id="searchError">Please enter a valid destination.</div>
 
-    <!-- 🧭 Full Screen Loader -->
-    <!-- Loader Overlay -->
-    <div id="loader" style="
+
+<div id="loader" style="
     display: none;
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    backdrop-filter: blur(8px);
     z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 ">
-        <!-- Loader Card -->
         <div style="
-        background: #f4f7fb;
-        border: 1px solid #dce3ed;
-        border-radius: 12px;
-        padding: 30px 25px;
+        background: linear-gradient(135deg, #d3ffe8, #e9efff, #ffd6e8);
+        border-radius: 20px;
+        padding: 45px 35px;
         width: 100%;
-        max-width: 360px;
+        max-width: 400px;
+        box-shadow:
+            0 20px 30px rgba(0, 0, 0, 0.12),
+            0 10px 15px rgba(0, 0, 0, 0.08);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        position: relative;
         text-align: center;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        animation: floatIn 0.6s ease-in-out;
     ">
-            <!-- Spinner -->
-            <div class="single-spinner" style="margin: 0 auto 20px;"></div>
+            <div class="fancy-spinner" style="margin: 0 auto 25px;"></div>
 
-            <!-- Message -->
-            <p style="font-size: 16px; font-weight: 600; color: #444; margin-bottom: 12px;">
+            <p style="
+            font-size: 18px;
+            font-weight: 700;
+            color: #202124;
+            margin-bottom: 14px;
+        ">
                 Searching for hotels...
             </p>
 
-            <!-- Summary -->
-            <div id="search-summary" style="font-size: 15px; line-height: 1.6; color: #2c3e50;">
-                <!-- Populated by JS -->
-            </div>
+            <div id="search-summary" style="
+            font-size: 15px;
+            color: #333;
+            line-height: 1.5;
+        "></div>
         </div>
     </div>
 
-    <!-- Style -->
     <style>
-        .single-spinner {
-            width: 48px;
-            height: 48px;
-            border: 5px solid;
-            border-color: #ff416c #ff4b2b #ff6a00 transparent;
+        .fancy-spinner {
+            width: 56px;
+            height: 56px;
+            border: 5px solid transparent;
+            border-top: 5px solid #00f0ff;
+            border-right: 5px solid #ff00cc;
             border-radius: 50%;
-            animation: spin 1s linear infinite;
+            animation: spin 0.85s linear infinite;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+            box-shadow:
+                0 0 10px #00f0ff,
+                0 0 10px #ff00cc inset;
         }
 
         @keyframes spin {
@@ -320,15 +332,26 @@
                 transform: rotate(360deg);
             }
         }
+
+        @keyframes floatIn {
+            0% {
+                transform: scale(0.9) translateY(20px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
     </style>
+
 
 
 
 </main>
 
-
 </div>
-
 
 <style>
     .hotel-img {

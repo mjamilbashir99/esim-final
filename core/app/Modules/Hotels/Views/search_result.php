@@ -959,103 +959,94 @@
             <p style="margin-top: 20px; font-weight: 500; color: #444;">Searching for hotels...</p>
         </div> -->
 <div id="pagination" class="text-center mt-4" style="padding:30px;"></div>
+<!-- Gradient Loader Modal -->
+
 <div id="loader" style="
-        display: none;
-        position: fixed;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        background-color: rgba(255, 255, 255, 0.9);
-        z-index: 9999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-
-    <!-- Loader Card -->
-    <div style="
-        background: #f4f7fb;
-        border: 1px solid #dce3ed;
-        border-radius: 12px;
-        padding: 30px 25px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+">
+        <div style="
+        background: linear-gradient(135deg, #d3ffe8, #e9efff, #ffd6e8);
+        border-radius: 20px;
+        padding: 45px 35px;
         width: 100%;
-        max-width: 360px;
+        max-width: 400px;
+        box-shadow:
+            0 20px 30px rgba(0, 0, 0, 0.12),
+            0 10px 15px rgba(0, 0, 0, 0.08);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        position: relative;
         text-align: center;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);">
+        overflow: hidden;
+        animation: floatIn 0.6s ease-in-out;
+    ">
+            <div class="fancy-spinner" style="margin: 0 auto 25px;"></div>
 
-        <div class="fancy-spinner" style="margin: 0 auto 20px;">
-            <div class="ring"></div>
-            <div class="ring"></div>
-            <div class="dot"></div>
-        </div>
+            <p style="
+            font-size: 18px;
+            font-weight: 700;
+            color: #202124;
+            margin-bottom: 14px;
+        ">
+                Searching for hotels...
+            </p>
 
-        <p style="font-size: 16px; font-weight: 600; color: #444; margin-bottom: 12px;">Searching for hotels...</p>
-
-        <div id="search-summary" style="font-size: 15px; line-height: 1.6; color: #2c3e50;">
+            <div id="search-summary" style="
+            font-size: 15px;
+            color: #333;
+            line-height: 1.5;
+        "></div>
         </div>
     </div>
-</div>
 
-<!-- Spinner Styles -->
-<style>
-    .fancy-spinner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    @keyframes spin {
-        to {
-            transform: rotate(360deg);
-        }
-    }
-
-    @keyframes pulse {
-
-        0%,
-        100% {
-            transform: scale(1);
-            opacity: 1;
+    <style>
+        .fancy-spinner {
+            width: 56px;
+            height: 56px;
+            border: 5px solid transparent;
+            border-top: 5px solid #00f0ff;
+            border-right: 5px solid #ff00cc;
+            border-radius: 50%;
+            animation: spin 0.85s linear infinite;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+            box-shadow:
+                0 0 10px #00f0ff,
+                0 0 10px #ff00cc inset;
         }
 
-        50% {
-            transform: scale(1.4);
-            opacity: 0.6;
-        }
-    }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
 
-    /* input field loader */
-    .loader-spinner svg circle {
-        stroke-dasharray: 90, 150;
-        stroke-dashoffset: 0;
-        animation: spinner 1.5s linear infinite;
-    }
-
-    #searchError {
-        display: none;
-        color: red;
-        font-weight: bold;
-        /* margin: 10px 0 20px; */
-        padding: 10px;
-    }
-
-    @keyframes spinner {
-        0% {
-            stroke-dashoffset: 0;
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
-        100% {
-            stroke-dashoffset: -240;
+        @keyframes floatIn {
+            0% {
+                transform: scale(0.9) translateY(20px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
         }
-    }
-</style>
-
-
-
-
-
-
-
+    </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Toastr JS -->
