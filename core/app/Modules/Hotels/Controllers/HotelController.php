@@ -628,6 +628,7 @@ class HotelController extends BaseController
 
             $bookingModel = new BookingModel();
 
+            
             $bookingData = [
                 'user_id' => $userId, 
                 'hotel_id' => $body['booking']['hotel']['code'],
