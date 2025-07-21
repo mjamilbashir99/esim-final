@@ -14,7 +14,7 @@
             <form id="searchForm" onsubmit="handleSubmit(event)">
                 <!-- Destination -->
                 <div class="mb-4 position-relative">
-                    <label for="searchInput" class="form-label">Destination</label>
+                    <label for="searchInput" class="form-label fw-bold">Destination</label>
                     <input type="text" id="searchInput" name="destination"
                         class="form-control form-control-lg bg-transparent border-0 text-white"
                         placeholder="Search by name or location" style="border-bottom: 2px solid #ffffff55;" />
@@ -39,13 +39,24 @@
                 <!-- Dates & Nights -->
                 <div class="row g-3 mb-4">
                     <div class="col-md-8">
-                        <label for="dateRange" class="form-label">Dates</label>
+                        <label for="dateRange" class="form-label fw-bold">Dates</label>
                         <input type="text" id="dateRange" name="dateRange" class="form-control form-control-lg bg-transparent border-0 text-white" placeholder="Check-in & check-out" style="border-bottom: 2px solid #ffffff55;" />
                     </div>
                     <div class="col-md-4">
-                        <label for="nights" class="form-label">Nights</label>
-                        <select id="nights" class="form-select form-select-lg bg-transparent border-0 text-white"
-                            style="border-bottom: 2px solid #ffffff55;">
+                        <label for="nights" class="form-label fw-bold">Nights</label>
+                        <select id="nights"
+                            class="form-select form-select-lg bg-transparent border-0 text-white"
+                            style="
+                                border-bottom: 2px solid #ffffff;
+                                appearance: none;
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                                background-image: url('data:image/svg+xml;utf8,<svg fill=\'white\' height=\'20\' viewBox=\'0 0 24 24\' width=\'20\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/></svg>');
+                                background-repeat: no-repeat;
+                                background-position: right 0.75rem center;
+                                background-size: 20px 20px;
+                                padding-right: 2.5rem;
+                            ">
                             <option class="dropdown-item text-black bg-white" value="" disabled selected hidden>Select Nights</option>
                             <script>
                                 for (let i = 1; i <= 30; i++) {
@@ -54,6 +65,7 @@
                             </script>
                         </select>
 
+
                     </div>
                 </div>
 
@@ -61,43 +73,62 @@
                 <input type="hidden" id="checkout" name="checkout">
 
                 <!-- Travellers -->
-                <div class="mb-4">
-                    <label for="passengerInput" class="form-label">Travellers</label>
-                    <input type="text" id="passengerInput" name="passenger" readonly class="form-control form-control-lg bg-transparent border-0 text-white" value="2 Adults, 1 Room" style="cursor: pointer; border-bottom: 2px solid #ffffff55;" />
-                    <div id="passengerDropdown" class="p-3 mt-1 bg-white text-black position-absolute w-100 rounded-3 shadow-sm" style="display: none; z-index: 999">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
+                <div class="mb-4 position-relative" style="z-index: 10;">
+                    <label for="passengerInput" class="form-label fw-bold">Travellers</label>
+                    <input type="text" id="passengerInput" name="passenger" readonly
+                        class="form-control form-control-lg bg-transparent border-0 text-white"
+                        value="2 Adults, 1 Room"
+                        style="cursor: pointer; border-bottom: 2px solid #ffffff55;" />
+
+                    <div id="passengerDropdown"
+                        class="passenger-dropdown-container"
+                        style="display: none;">
+
+                        <!-- Adults -->
+                        <div class="passenger-row">
                             <span>Adults</span>
-                            <div class="d-flex align-items-center gap-2">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" onclick="updatePassenger('adults', -1)">−</button>
+                            <div class="passenger-control">
+                                <button type="button" onclick="updatePassenger('adults', -1)">−</button>
                                 <span id="adultsCount">2</span>
-                                <button type="button" class="btn btn-outline-secondary btn-sm" onclick="updatePassenger('adults', 1)">+</button>
+                                <button type="button" onclick="updatePassenger('adults', 1)">+</button>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center mb-2">
+
+                        <!-- Children -->
+                        <div class="passenger-row">
                             <span>Children</span>
-                            <div class="d-flex align-items-center gap-2">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" onclick="updatePassenger('children', -1)">−</button>
+                            <div class="passenger-control">
+                                <button type="button" onclick="updatePassenger('children', -1)">−</button>
                                 <span id="childrenCount">0</span>
-                                <button type="button" class="btn btn-outline-secondary btn-sm" onclick="updatePassenger('children', 1)">+</button>
+                                <button type="button" onclick="updatePassenger('children', 1)">+</button>
                             </div>
                         </div>
-                        <div id="childAges" class="mt-2"></div>
-                        <div class="d-flex justify-content-between align-items-center mt-3">
+
+                        <!-- Child Ages -->
+                        <div id="childAges" class="passenger-ages"></div>
+
+                        <!-- Rooms -->
+                        <div class="passenger-row mt-3">
                             <span>Rooms</span>
-                            <div class="d-flex align-items-center gap-2">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" onclick="updatePassenger('rooms', -1)">−</button>
+                            <div class="passenger-control">
+                                <button type="button" onclick="updatePassenger('rooms', -1)">−</button>
                                 <span id="roomsCount">1</span>
-                                <button type="button" class="btn btn-outline-secondary btn-sm" onclick="updatePassenger('rooms', 1)">+</button>
+                                <button type="button" onclick="updatePassenger('rooms', 1)">+</button>
                             </div>
                         </div>
                     </div>
+
+
+                    <!-- Hidden Inputs -->
                     <input type="hidden" id="adultsInput" name="adults" value="2" />
                     <input type="hidden" id="childrenInput" name="children" value="0" />
                     <input type="hidden" id="roomsInput" name="rooms" value="1" />
                 </div>
 
+
                 <!-- Search Button -->
-                <button type="submit" class="btn w-100 mt-3 text-white fw-bold btn-lg" style="background: linear-gradient(90deg, #ff416c, #ff4b2b); border-radius: 14px;">Search</button>
+                <button type="submit" class="btn w-100 mt-3 text-white fw-bold btn-lg" style="background: linear-gradient(90deg, rgba(255, 35, 109, 0.6), rgba(255, 75, 43, 0.8));
+ border-radius: 14px;">Search</button>
 
             </form>
 
@@ -249,6 +280,97 @@
             font-weight: bold;
             padding: 8px 0 0 2px;
         }
+
+        .passenger-dropdown-container {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem;
+            margin-top: 8px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            color: #fff;
+        }
+
+        .passenger-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 16px;
+        }
+
+        .passenger-control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .passenger-control button {
+            background: rgba(255, 255, 255, 0.15);
+            border: none;
+            color: #fff;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: all 0.2s ease;
+        }
+
+        .passenger-control button:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .passenger-control span {
+            width: 24px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Age Select Fields */
+        .passenger-ages {
+            display: flex;
+            overflow-x: auto;
+            gap: 12px;
+            margin-top: 1rem;
+            padding-bottom: 8px;
+            scrollbar-width: thin;
+        }
+
+        .passenger-ages::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .passenger-ages::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+        }
+
+
+        .passenger-ages select {
+            width: 100px;
+            padding: 6px 10px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #fff;
+            border-radius: 10px;
+            outline: none;
+            appearance: none;
+            backdrop-filter: blur(8px);
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .passenger-ages select:focus {
+            border-color: #ffbdbd;
+            background: rgba(255, 255, 255, 0.2);
+        }
     </style>
 
     <div id="searchLoader">
@@ -259,7 +381,7 @@
     <div id="searchError">Please enter a valid destination.</div>
 
 
-<div id="loader" style="
+    <div id="loader" style="
     display: none;
     position: fixed;
     top: 0;
@@ -384,6 +506,11 @@
         margin-top: 10px;
     }
 
+    .alinks {
+        text-decoration: none;
+        color: inherit;
+    }
+
     .section-heading {
         border-bottom: 3px solid #ff4b2b;
         display: inline-block;
@@ -420,7 +547,8 @@
             ?>
 
             <div class="col-md-4">
-                <a href="<?= base_url("search-result?destination=Ohtels+Villa+Dorada&checkin=$today&checkout=$threeDaysLater&adults=2&children=0&rooms=1&passenger_summary=2+Adults,+1+Room&children_ages=") ?>">
+                <a href="<?= base_url("search-result?destination=Ohtels+Villa+Dorada&checkin=$today&checkout=$threeDaysLater&adults=2&children=0&rooms=1&passenger_summary=2+Adults,+1+Room&children_ages=") ?>"
+                    class="alinks">
                     <div class="card border-0 shadow-sm h-100 hover-scale rounded-3 overflow-hidden">
                         <div class="position-relative">
                             <img src="<?= base_url('/assets/img/hotel1.jpg') ?>" class="card-img-top hotel-img" alt="North Beach Hotel">
@@ -435,31 +563,33 @@
 
             <!-- Card 2 -->
             <div class="col-md-4">
-                <a href="<?= base_url("search-result?destination=Ohtels+Villa+Dorada&checkin=$today&checkout=$threeDaysLater&adults=2&children=0&rooms=1&passenger_summary=2+Adults,+1+Room&children_ages=") ?>">
-                <div class="card border-0 shadow-sm h-100 hover-scale rounded-3 overflow-hidden">
-                    <div class="position-relative">
-                        <img src="<?= base_url('/assets/img/hotel2.jpg') ?>" class="card-img-top hotel-img" alt="Westgate Palace Resort">
-                        <span class="discount-badge">-12%</span>
+                <a href="<?= base_url("search-result?destination=Ohtels+Villa+Dorada&checkin=$today&checkout=$threeDaysLater&adults=2&children=0&rooms=1&passenger_summary=2+Adults,+1+Room&children_ages=") ?>"
+                    class="alinks">
+                    <div class="card border-0 shadow-sm h-100 hover-scale rounded-3 overflow-hidden">
+                        <div class="position-relative">
+                            <img src="<?= base_url('/assets/img/hotel2.jpg') ?>" class="card-img-top hotel-img" alt="Westgate Palace Resort">
+                            <span class="discount-badge">-12%</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-semibold">Westgate Palace Resort</h5>
+                        </div>
                     </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-semibold">Westgate Palace Resort</h5>
-                    </div>
-                </div>
                 </a>
             </div>
 
             <!-- Card 3 -->
             <div class="col-md-4">
-                 <a href="<?= base_url("search-result?destination=Ohtels+Villa+Dorada&checkin=$today&checkout=$threeDaysLater&adults=2&children=0&rooms=1&passenger_summary=2+Adults,+1+Room&children_ages=") ?>">
-                <div class="card border-0 shadow-sm h-100 hover-scale rounded-3 overflow-hidden">
-                    <div class="position-relative">
-                        <img src="<?= base_url('/assets/img/hotel3.jpg') ?>" class="card-img-top hotel-img" alt="New Otani Tokyo Garden">
-                        <span class="discount-badge">-38%</span>
+                <a href="<?= base_url("search-result?destination=Ohtels+Villa+Dorada&checkin=$today&checkout=$threeDaysLater&adults=2&children=0&rooms=1&passenger_summary=2+Adults,+1+Room&children_ages=") ?>"
+                    class="alinks">
+                    <div class="card border-0 shadow-sm h-100 hover-scale rounded-3 overflow-hidden">
+                        <div class="position-relative">
+                            <img src="<?= base_url('/assets/img/hotel3.jpg') ?>" class="card-img-top hotel-img" alt="New Otani Tokyo Garden">
+                            <span class="discount-badge">-38%</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-semibold">New Otani Tokyo Garden</h5>
+                        </div>
                     </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-semibold">New Otani Tokyo Garden</h5>
-                    </div>
-                </div>
                 </a>
             </div>
         </div>
@@ -709,7 +839,12 @@
             const select = document.createElement("select");
             select.name = "children_ages[]";
             select.id = `childAge${i}`;
-            select.className = "form-control mt-2 fs-16px lato fw-normal";
+            // select.className = "form-control mt-2 fs-16px lato fw-normal";
+            select.className = "form-select bg-white text-dark";
+            select.style.width = "100px";
+            select.style.borderRadius = "8px";
+            select.style.border = "1px solid #ccc";
+
             select.required = true;
 
             const defaultOption = document.createElement("option");
