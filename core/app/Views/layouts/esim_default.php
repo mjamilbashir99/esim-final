@@ -133,6 +133,9 @@
                 <a href="<?php echo base_url('/esim') ?>">
                     <p class="text-light-green">Home</p>
                 </a>
+                <a href="<?php echo base_url('/hotels') ?>">
+                    <p class="text-light-green">Hotels</p>
+                </a>
                 <a href="<?php echo base_url('/fetch-bundles') ?>">
                     <p class="text-light-green">eSIM Data Plans</p>
                 </a>
