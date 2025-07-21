@@ -21,18 +21,7 @@
                             <th>ACTIONS</th>
                         </tr>
                     </thead>
-                    <tfoot>
-                        <tr>
-                            <th>#</th>
-                            <th>STATUS</th>
-                            <th>B2C MARKUP</th>
-                            <!-- <th>B2B MARKUP</th>
-                            <th>FROM DATE</th>
-                            <th>TO DATE</th> -->
-                            <th>MODULE ID</th>
-                            <th>ACTIONS</th>
-                        </tr>
-                    </tfoot>
+                    
                     <tbody>
                         <?php foreach ($markups as $markup): ?>
                         <tr>

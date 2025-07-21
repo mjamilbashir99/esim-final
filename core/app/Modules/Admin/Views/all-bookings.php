@@ -36,19 +36,7 @@
                     <th>Created At</th>
                 </tr>
             </thead>
-            <tfoot>
-                <tr>
-                    <th>ID</th>
-                    <th>User Name</th>
-                    <th>User Email</th>
-                    <th>E-SIM Ref</th>
-                    <th>Bundle ID</th>
-                    <th>Quantity</th>
-                    <th>Total Price</th>
-                    <th>Status</th>
-                    <th>Created At</th>
-                </tr>
-            </tfoot>
+           
             <tbody>
                 <?php if (!empty($bookings)) : ?>
                     <?php foreach ($bookings as $booking) : ?>

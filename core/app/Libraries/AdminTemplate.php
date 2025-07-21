@@ -3,7 +3,7 @@ namespace App\Libraries;
 
 class AdminTemplate
 {
-    protected $layout = 'layouts/admin_default';
+    protected $layout = 'Admin/Views/admin_default';
 
     public function render($view, $data = [])
     {

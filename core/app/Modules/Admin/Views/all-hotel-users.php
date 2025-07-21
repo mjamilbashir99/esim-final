@@ -21,7 +21,17 @@
                             <th>Action</th>
                         </tr>
                     </thead>
-                   
+                    <tfoot>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>User Type</th>
+                            <th>Created at</th>
+                            <th>Action</th>
+                        </tr>
+                    </tfoot>
                     <tbody>
                         <?php if (!empty($users) && is_array($users)) : ?>
                         <?php foreach ($users as $user) : ?>
