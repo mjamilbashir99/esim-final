@@ -31,16 +31,7 @@
                             <th>Actions</th>
                         </tr>
                     </thead>
-                    <tfoot>
-                        <tr>
-                            <th>ID</th>
-                            <th>Template Name</th>
-                            <th>Subject</th>
-                            <th>Slug</th>
-                            <th>Last Updated</th>
-                            <th>Actions</th>
-                        </tr>
-                    </tfoot>
+                    
                     <tbody>
                         <?php if (!empty($templates) && is_array($templates)): ?>
                             <?php foreach ($templates as $template): ?>
