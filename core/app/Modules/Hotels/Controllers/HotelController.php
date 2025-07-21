@@ -9,6 +9,8 @@ use Modules\Hotels\Models\BookingModel;
 use Modules\Hotels\Models\HotelModel;
 use Modules\Hotels\Models\MarkupModel;
 use Modules\Hotels\Models\CountryCodeModel;
+use Stripe\Stripe;
+use Stripe\Checkout\Session;
 
 
 class HotelController extends BaseController
