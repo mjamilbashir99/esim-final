@@ -55,7 +55,8 @@ class AdminController extends BaseController
         $userModel = new UserModel();
 
         $users = $userModel
-            ->orderBy('id', 'DESC') // ya 'created_at', 'DESC' agar column hai
+            ->where('is_admin !=', 1)
+            ->orderBy('id', 'DESC') 
             ->findAll();
 
         $data = [
