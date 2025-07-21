@@ -51,14 +51,13 @@ class BookingModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    // ✅ Example: Get all esim bookings with user info
-   public function getBookingsWithUser()
-{
-    return $this->db->table('bookings')
-        ->select('bookings.*, users.name as user_name, users.email as user_email')
-        ->join('users', 'users.id = bookings.user_id', 'left')
-        ->orderBy('bookings.id', 'DESC')
-        ->get()
-        ->getResultArray();
-}
+    public function getBookingsWithUser()
+    {
+        return $this->db->table('bookings')
+            ->select('bookings.*, users.name as user_name, users.email as user_email')
+            ->join('users', 'users.id = bookings.user_id', 'left')
+            ->orderBy('bookings.id', 'DESC')
+            ->get()
+            ->getResultArray();
+    }
 }
