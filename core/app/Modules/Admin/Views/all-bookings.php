@@ -38,19 +38,23 @@
             </thead>
            
             <tbody>
+                
                 <?php if (!empty($bookings)) : ?>
                     <?php foreach ($bookings as $booking) : ?>
-                        <tr>
-                            <td><?= esc($booking['id']) ?></td>
-                            <td><?= esc($booking['user_name']) ?></td>
-                            <td><a href="mailto:<?= esc($booking['user_email']) ?>"><?= esc($booking['user_email']) ?></a></td>
-                            <td><?= esc($booking['esim_reference']) ?></td>
-                            <td><?= esc($booking['bundle_id']) ?></td>
-                            <td><?= esc($booking['quantity']) ?></td>
-                            <td><?= esc($booking['total_price']) ?> <?= esc($booking['currency']) ?></td>
-                            <td><?= esc(ucfirst($booking['status'])) ?></td>
-                            <td><?= esc($booking['created_at']) ?></td>
-                        </tr>
+                        <?php if($booking['esim_reference'] !== NULL) : ?>
+                            
+                            <tr>
+                                <td><?= esc($booking['id']) ?></td>
+                                <td><?= esc($booking['user_name']) ?></td>
+                                <td><a href="mailto:<?= esc($booking['user_email']) ?>"><?= esc($booking['user_email']) ?></a></td>
+                                <td><?= esc($booking['esim_reference']) ?></td>
+                                <td><?= esc($booking['bundle_id']) ?></td>
+                                <td><?= esc($booking['quantity']) ?></td>
+                                <td><?= esc($booking['total_price']) ?> <?= esc($booking['currency']) ?></td>
+                                <td><?= esc(ucfirst($booking['status'])) ?></td>
+                                <td><?= esc($booking['created_at']) ?></td>
+                            </tr>
+                        <?php endif ?>
                     <?php endforeach; ?>
                 <?php else : ?>
                     <tr>

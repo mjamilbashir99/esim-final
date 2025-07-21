@@ -68,7 +68,7 @@ class AdminController extends BaseController
     }
     public function listBookings()
     {
-        $bookingModel = new \App\Models\BookingModel();
+        $bookingModel = new BookingModel();
 
         $data = [
             'admin' => session()->get('admin_data'),
