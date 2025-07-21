@@ -79,6 +79,7 @@
                         <select class="form-control" id="moduleId" name="moduleId">
                             <option value="esim">esim</option>
                         </select>
+                        </select>
                     </div>
                 </form>
             </div>
