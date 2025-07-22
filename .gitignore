@@ -1,1 +1,30 @@
-/core/writable/
+# Ignore writable folder
+core/writable/
+
+# Ignore environment file
+core/.env
+
+# Ignore entire Config folder (optional)
+core/app/Config/
+
+# Or just ignore database config (recommended if working in team)
+# core/app/Config/Database.php
+
+# Ignore log, cache or temp folders if needed
+core/app/Logs/
+core/app/Cache/
+
+# Ignore system-generated files
+*.log
+*.swp
+*.swo
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+
+# Ignore vendor if not committing dependencies
+vendor/
+
+# Node modules if any JS framework used
+node_modules/
