@@ -260,17 +260,14 @@ class AdminController extends BaseController
 
     public function markups()
     {
-        // MarkupModel ka instance
         $markupModel = new MarkupModel();
 
-        // Markups ko fetch karna
         $data = [
             'admin'   => session()->get('admin_data'),
-            'markups' => $markupModel->findAll(), // Markups ko fetch kar rahe hain
+            'markups' => $markupModel->findAll(),
             'title'   => 'Hotels'
         ];
 
-        // Template render karna aur data pass karna
         return $this->template->render('Admin/Views/hotels', $data);
     }
 }
