@@ -12,7 +12,6 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>STATUS</th>
                             <th>B2C MARKUP</th>
                             <!-- <th>B2B MARKUP</th>
                             <th>FROM DATE</th>
@@ -26,12 +25,6 @@
                         <?php foreach ($markups as $markup): ?>
                         <tr>
                             <td><?= $markup['id'] ?></td>
-                            <td>
-                                <label class="switch-tmg">
-                                    <input type="checkbox" <?= $markup['status'] === 'enabled' ? 'checked' : '' ?>>
-                                    <span class="slider-tmg"></span>
-                                </label>
-                            </td>
                             <td><?= $markup['b2c_markup'] ?> %</td>
                             <td><?= $markup['module_id'] ?></td>
                             <td>
@@ -78,6 +71,7 @@
                         <label for="moduleId">Module Id</label>
                         <select class="form-control" id="moduleId" name="moduleId">
                             <option value="esim">esim</option>
+                            <option value="hotel">hotel</option>
                         </select>
                         </select>
                     </div>

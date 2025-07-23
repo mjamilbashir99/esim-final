@@ -31,11 +31,11 @@ class HotelController extends BaseController
     public function getCitySuggestions(): ResponseInterface
     {
         $term = $this->request->getGet('term');
-    
+
         if (!$term || strlen($term) < 2) {
             return $this->response->setJSON([]);
         }
-    
+
         $db = \Config\Database::connect();
         $hotelModel = new HotelModel();
         $suggestions = [];
@@ -43,12 +43,12 @@ class HotelController extends BaseController
 
         $destBuilder = $db->table('destinations');
         $destBuilder->select('DISTINCT destinations.name, destinations.country_name', false)
-                    ->groupStart()
-                        ->like('destinations.name', $term)
-                        ->orLike('destinations.country_name', $term)
-                    ->groupEnd()
-                    ->orderBy('destinations.country_name')
-                    ->limit(20);
+            ->groupStart()
+            ->like('destinations.name', $term)
+            ->orLike('destinations.country_name', $term)
+            ->groupEnd()
+            ->orderBy('destinations.country_name')
+            ->limit(20);
         $destinations = $destBuilder->get()->getResultArray();
 
         foreach ($destinations as $destination) {
@@ -63,13 +63,13 @@ class HotelController extends BaseController
                 ];
             }
         }
-    
+
         $builder = $db->table('hotels');
         $builder->select('DISTINCT hotels.city', false)
-                ->like('hotels.city', $term)
-                ->limit(20);
+            ->like('hotels.city', $term)
+            ->limit(20);
         $cities = $builder->get()->getResultArray();
-    
+
         foreach ($cities as $city) {
             $key = strtolower(preg_replace('/[^a-z0-9]/i', '', $city['city']));
             if (!isset($uniqueKeys[$key])) {
@@ -82,11 +82,11 @@ class HotelController extends BaseController
                 ];
             }
         }
-    
+
         $hotels = $hotelModel->like('name', $term)
-                           ->limit(20)
-                           ->findAll();
-        
+            ->limit(20)
+            ->findAll();
+
         foreach ($hotels as $hotel) {
             $key = strtolower(preg_replace('/[^a-z0-9]/i', '', $hotel['name']));
             if (!isset($uniqueKeys[$key])) {
@@ -99,10 +99,10 @@ class HotelController extends BaseController
                 ];
             }
         }
-    
+
         return $this->response->setJSON($suggestions);
     }
-    
+
     // Optimised Searching
     public function searchHotels()
     {
@@ -120,9 +120,9 @@ class HotelController extends BaseController
 
         $session->set([
             'adults_store_in_session'     => $adults,
-            'destination_store_in_session'=> $destination,
-            'checkin_raw_store_in_session'=> $checkInRaw,
-            'checkout_raw_store_in_session'=> $checkOutRaw,
+            'destination_store_in_session' => $destination,
+            'checkin_raw_store_in_session' => $checkInRaw,
+            'checkout_raw_store_in_session' => $checkOutRaw,
             'rooms'                       => $rooms,
             'passenger'                   => $passenger,
             'adults'                      => $adults,
@@ -143,8 +143,8 @@ class HotelController extends BaseController
                 'type' => 'geolocation',
                 'latitude' => (float) $city['latitude'],
                 'longitude' => (float) $city['longitude'],
-                'radius' => 50, 
-                'unit' => 'km' 
+                'radius' => 50,
+                'unit' => 'km'
             ]);
         }
 
@@ -220,7 +220,6 @@ class HotelController extends BaseController
             ]);
 
             return $this->response->setJSON(['success' => true]);
-
         } catch (\Exception $e) {
             log_message('error', 'Hotel Search Error: ' . $e->getMessage());
             return $this->response->setJSON([
@@ -272,7 +271,7 @@ class HotelController extends BaseController
     private function generatePaxes(int $adults, array $childrenAges = []): array
     {
         $paxes = [];
-        
+
         // Add adults
         for ($i = 0; $i < $adults; $i++) {
             $paxes[] = [
@@ -281,7 +280,7 @@ class HotelController extends BaseController
                 "age" => 30
             ];
         }
-        
+
         // Add children
         foreach ($childrenAges as $index => $age) {
             $paxes[] = [
@@ -290,7 +289,7 @@ class HotelController extends BaseController
                 "age" => (int) $age
             ];
         }
-        
+
         return $paxes;
     }
 
@@ -309,18 +308,18 @@ class HotelController extends BaseController
         $children = $session->get('children');
         $childrenAges = $session->get('children_ages') ?? [];
 
-        
+
         $hotels = isset($results['hotels']) ? $results['hotels'] : [];
         $currentPage = (int) ($this->request->getGet('page') ?? 1);
         $total = count($hotels['hotels'] ?? []);
-        
+
 
         $matchedHotels = [];
         $hotelModel = new HotelModel();
-        
+
         if (!empty($hotels['hotels']) && is_array($hotels['hotels'])) {
             $hotelCodes = array_column($hotels['hotels'], 'code');
-        
+
             $localHotels = $hotelModel
                 ->select('hotel_code, amenities, chain_code, thumbnail_url')
                 ->whereIn('hotel_code', $hotelCodes)
@@ -330,7 +329,7 @@ class HotelController extends BaseController
             foreach ($localHotels as $localHotel) {
                 $indexedHotels[$localHotel['hotel_code']] = $localHotel;
             }
-        
+
             foreach ($hotels['hotels'] as &$hotel) {
                 $hotelCode = $hotel['code'] ?? null;
                 if ($hotelCode && isset($indexedHotels[$hotelCode])) {
@@ -340,10 +339,11 @@ class HotelController extends BaseController
         }
 
         $markupModel = new MarkupModel();
-        $markup = $markupModel->first(); 
-        
+        $markup = $markupModel->where('module_id', 'hotel')->where('status', 'enabled')->first();
+
         $markupPercent = isset($markup['b2c_markup']) ? (float)$markup['b2c_markup'] : 0;
-        // var_dump($markupPercent);die();
+        // var_dump($markupPercent);
+        // die();
 
         return $this->template->render('Hotels/Views/search_result', [
             'hotels' => $hotels,
@@ -372,7 +372,7 @@ class HotelController extends BaseController
         $signature = hash('sha256', $apiKey . $secret . $timestamp);
 
         $url = $this->contentUrl . '/hotels/437/details';
-        
+
 
         $headers = [
             'Accept'       => 'application/json',
@@ -405,13 +405,13 @@ class HotelController extends BaseController
     {
         $title = 'Hotel Room Discount | Hotel Details';
         $session = session();
-        
+
         $searchResults = $session->get('hotel_search_results');
         $getSearchedAdults = $session->get('adults_store_in_session');
         $cacheFile = WRITEPATH . "cache/hotel_{$code}_details.json";
 
         $hotelRates = null;
-        
+
         if (isset($searchResults['hotels']['hotels'])) {
             foreach ($searchResults['hotels']['hotels'] as $hotel) {
                 if ((int)$hotel['code'] === (int)$code) {
@@ -430,8 +430,8 @@ class HotelController extends BaseController
             $timestamp = time();
             $signature = hash('sha256', $apiKey . $secret . $timestamp);
 
-            $url = $this->contentUrl ."/hotels/{$code}/details";
-             
+            $url = $this->contentUrl . "/hotels/{$code}/details";
+
 
             $client = \Config\Services::curlrequest();
 
@@ -453,13 +453,13 @@ class HotelController extends BaseController
         }
 
         $markupModel = new MarkupModel();
-        $markup = $markupModel->first(); 
-        
+        $markup = $markupModel->first();
+
         $markupPercent = isset($markup['b2c_markup']) ? (float)$markup['b2c_markup'] : 0;
-        
-        $convertedProfit = $markupPercent/100;
+
+        $convertedProfit = $markupPercent / 100;
         $convertedProfitAmount = $convertedProfit + 1;
-       
+
         return $this->template->render('Hotels/Views/hotel_details', [
             'hotelDetails' => $responseBody,
             'rateData' => $hotelRates,
@@ -492,7 +492,7 @@ class HotelController extends BaseController
         $timestamp = time();
         $signature = hash('sha256', $apiKey . $secret . $timestamp);
 
-        $url = $this->hotelUrl .'/checkrates';
+        $url = $this->hotelUrl . '/checkrates';
         $client = \Config\Services::curlrequest();
 
         $payload = [
@@ -510,7 +510,7 @@ class HotelController extends BaseController
                     'Content-Type' => 'application/json'
                 ],
                 'body' => json_encode($payload),
-                'http_errors' => false 
+                'http_errors' => false
             ]);
 
             $status = $response->getStatusCode();
@@ -561,7 +561,7 @@ class HotelController extends BaseController
         $paymentMethodId = $this->request->getPost('payment_method_id');
         $hotelPrice = $this->request->getPost('hotel_price');
         $userId = session()->get('user_id');
-    
+
         if (!$rateKey || !$paymentMethodId) {
             return $this->response->setJSON(['error' => 'Required fields missing']);
         }
@@ -579,8 +579,6 @@ class HotelController extends BaseController
                 'confirm' => true,
                 'capture_method' => 'manual'
             ]);
-            
-            
         } catch (\Exception $e) {
             return $this->response->setJSON(['error' => 'Card Error: ' . $e->getMessage()]);
         }
@@ -628,9 +626,9 @@ class HotelController extends BaseController
 
             $bookingModel = new BookingModel();
 
-            
+
             $bookingData = [
-                'user_id' => $userId, 
+                'user_id' => $userId,
                 'hotel_id' => $body['booking']['hotel']['code'],
                 'room_id' => $body['booking']['hotel']['rooms'][0]['id'],
                 'booking_reference' => $body['booking']['reference'],
@@ -642,7 +640,7 @@ class HotelController extends BaseController
                 'currency' => $body['booking']['currency'],
                 'status' => 'confirmed'
             ];
-            
+
             $bookingDataEmail = [
                 'hotel_name' => $session->get('checkout_hotel_name'),
                 'price' => $session->get('checkout_price'),
@@ -659,8 +657,8 @@ class HotelController extends BaseController
             $body['booking']['pendingAmount'] = 0;
 
             $this->sendBookingConfirmationEmail($email, $name, $bookingDataEmail);
-            
-            $html = $this->template->render('Hotels/Views/thankyou', ['booking' => $body['booking'],'price' => $price]);
+
+            $html = $this->template->render('Hotels/Views/thankyou', ['booking' => $body['booking'], 'price' => $price]);
 
             return $this->response->setJSON([
                 'html' => $html
@@ -685,7 +683,7 @@ class HotelController extends BaseController
 
         $searchResults = $session->get('hotel_search_results');
         $hotelDetails = $session->get('hotel_details');
-        
+
         $checkInHour = '';
         $checkOutHour = '';
 
@@ -834,12 +832,12 @@ class HotelController extends BaseController
             </body>
             </html>';
 
-            $emailService = \Config\Services::email();
-            $emailService->setTo($email);
-            $emailService->setSubject("Your Booking Confirmation");
-            $emailService->setMessage($templateContent);
-            $emailService->setMailType('html');
-            return $emailService->send();
+        $emailService = \Config\Services::email();
+        $emailService->setTo($email);
+        $emailService->setSubject("Your Booking Confirmation");
+        $emailService->setMessage($templateContent);
+        $emailService->setMailType('html');
+        return $emailService->send();
     }
 
 
